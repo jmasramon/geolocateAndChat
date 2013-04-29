@@ -15,7 +15,7 @@ ChatApp.Connection = function(userList, messageList) {
     this.messageList = messageList;
 
 }
-_.extend(window.ChatApp.Connection.prototype, Backbone.Events, {
+_.extend(window.ChatApp.Connection.prototype, Backbone.Events, { // Afegim backbone events a connection amb underescore 
 
     socket : null,
     userList : null,

@@ -5,6 +5,37 @@
  * done it should trigger a 'submit' event. 
  *
  * The submit event should get an object passed, containing two properties:
- *   - nickName
- *   - email
+ *    nickName
+ *    email
  */
+ ChatApp.View.Welcome = Backbone.View.extend({
+
+    events : {
+
+        "submit form" : "submit"
+
+    },
+
+    submit : function(ev) {
+
+        // Making sure the browser doesn't submit the form
+        ev.preventDefault();
+
+        // Gathering form values
+        var nickName = this.$('input[name=nickName]').val();
+        var email = this.$('input[name=email]').val();
+
+        // Triggering the 'submit' event
+        this.trigger('submit', {
+            nickName : nickName,
+            email    : email
+        });
+
+        // Hiding the welcome screen
+        this.$el.hide();
+        // Showing the user list and the text area
+        $('section.userList').removeClass('template');
+        $('section.inputArea').removeClass('template');
+    }
+
+});
