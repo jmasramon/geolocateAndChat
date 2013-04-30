@@ -1,18 +1,27 @@
-Chat server for Node.js
-=======================
+Based on Chat server for Node.js (Copyright (c)2011-2012 Rooftop Solutions, thanks to Boy Baukema )
+===================================================================================================
 
 Requirements: nodejs
+Uses: google.maps api
+
+Note
+====
+Added code from the WherAmI sample from google.
+Work in progress !!
+
+Objective
+=========
+Allow users of mobile devices to chat when they are close to each other
+
 
 Instructions
 ============
 
 1. cd server
 2. node ChatServer.js
-3. Open http://127.0.0.1:8080/client/index.html in a browser
+3. Open http://loclahost:1337/client/index.html in a browser
+4. allow the browser to access the phone gps
+5. login and wait
+6. chat
 
 
-Copyright
-=========
-(c)2011-2012 Rooftop Solutions
-
-Thanks to Boy Baukema
