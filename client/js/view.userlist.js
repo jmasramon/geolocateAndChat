@@ -19,10 +19,12 @@ ChatApp.View.UserList = Backbone.View.extend({
 
         var self = this;
 
-        this.collection.bind('add', function(user) {
+        // Això és el que connecta els models a les vistes
+        this.collection.bind('add', function(user) { // Quan s'afegeix al model
             self.addUser(user);
         });
-        this.collection.bind('remove', function(user) {
+        
+        this.collection.bind('remove', function(user) { // Quan es treu del model
             self.removeUser(user);
         });
 

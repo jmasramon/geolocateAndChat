@@ -24,11 +24,17 @@
         // Gathering form values
         var nickName = this.$('input[name=nickName]').val();
         var email = this.$('input[name=email]').val();
+        var lat = this.$('input[name=lat]').val();
+        var lng = this.$('input[name=lng]').val();
+
+        console.log('lat = ' + lat + ' lng = ' + lng);
 
         // Triggering the 'submit' event
         this.trigger('submit', {
             nickName : nickName,
             email    : email
+            , lat      : lat
+            , lng      : lng
         });
 
         // Hiding the welcome screen
@@ -36,6 +42,8 @@
         // Showing the user list and the text area
         $('section.userList').removeClass('template');
         $('section.inputArea').removeClass('template');
+
+        ChatApp.vent.trigger('mostrarEsperando');
     }
 
 });

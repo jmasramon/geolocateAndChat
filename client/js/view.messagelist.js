@@ -18,7 +18,7 @@ ChatApp.View.MessageList = Backbone.View.extend({
     },
 
     /**
-     * This method is called whenver a new message was received from the server.
+     * This method is called whenever a new message was received from the server.
      */
     addMessage : function(message) {
 

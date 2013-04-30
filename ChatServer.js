@@ -137,6 +137,8 @@ function User() {
 User.prototype.id = 0;
 User.prototype.email = null;
 User.prototype.nickName = null;
+User.prototype.lat = null;
+User.prototype.lng = null;
 User.prototype.serialize = function() {
     return {
         id : this.id,
@@ -148,8 +150,33 @@ User.prototype.serialize = function() {
 
 User.lastId = 0;
 
+///////////////////////////////
+function dosCerca(){
+    // console.log("comprobando cercania");
+    if (users && users[0] && users[1]){
+       
+        var dist = Math.sqrt(Math.pow((users[0].lat-users[1].lat),2)+Math.pow((users[0].lat-users[1].lat),2));
+        console.log("Usuarios: " + users[0].nickName + " con coords (" + users[0].lat + " , " + users[0].lng  + ") "  + " y " + users[1].nickName+ " con coords (" + users[1].lat + " , " + users[1].lng  + ") estan a dist=" + dist);
+        if ( dist < 10 ) return true;
+        return false;
+    }
+}
+
+
+//////////////////////////////
 
 io.sockets.on('connection', function(socket) {
+
+    // TODO: acabar-ho bé. Ara se'n crea un per cada login i per tant envia dos missatges pel socket
+    if (!interval){
+        var interval = setInterval(function(){ 
+            if (dosCerca()) { 
+                console.log("dos cerca"); 
+                socket.broadcast.emit('usuarioCerca');
+                clearInterval(interval); 
+            }
+        }, 1000);
+    }
 
     var user = new User();
     socket.set('user', user);
@@ -164,7 +191,11 @@ io.sockets.on('connection', function(socket) {
         }
         user.email = info.email;
         user.nickName = info.nickName;
+        user.lat = info.lat;
+        user.lng = info.lng;
         users.push(user); // Guarda el nou usu a la llista d'usus connectats. No hi ha bd. Tot es fa en t real (en memo)
+
+        console.log(user);
 
         socket.broadcast.emit('join', user.serialize()); // envia als usuaris connectats les dades del nou connectat
         socket.emit('userList', users.map(

@@ -15,40 +15,46 @@ ChatApp.Connection = function(userList, messageList) {
     this.messageList = messageList;
 
 }
-_.extend(window.ChatApp.Connection.prototype, Backbone.Events, { // Afegim backbone events a connection amb underescore 
 
+_.extend(window.ChatApp.Connection.prototype, Backbone.Events, { // Afegim backbone events a connection amb underescore 
+                                                                 // No acabo d'entednre perquè !!!
     socket : null,
     userList : null,
 
     /**
      * Connect to the server
      */
-    connect : function(nickName, email) {
+    connect : function(nickName, email, lat, lng) {
 
         this.socket = io.connect(
             ChatApp.serverUrl
         );
-        this.nick(nickName, email);
+        this.nick(nickName, email, lat, lng);
 
         var self = this;
 
+        // Escoltem els misstges del servidor
         this.socket.on('error', function(arg) { self.onError(arg) });
         this.socket.on('userList', function(arg) { self.onUserList(arg) });
         this.socket.on('part', function(arg) { self.onPart(arg) });
         this.socket.on('join', function(arg) { self.onJoin(arg) });
         this.socket.on('message', function(arg) { self.onMessage(arg) });
+        this.socket.on('usuarioCerca', function() { self.onUsuarioCerca() });
 
     },
 
+    // Enviament de missatges ---------------------------
     /**
      * Sets the current user's nick and email address.
      */
-    nick : function(nickName, email) {
+    nick : function(nickName, email, lat, lng) {
 
         this.socket.emit('nick', {
             nickName : nickName,
             email    : email
-        });
+            , lat      : lat
+            , lng      : lng
+       });
 
     },
 
@@ -61,6 +67,7 @@ _.extend(window.ChatApp.Connection.prototype, Backbone.Events, { // Afegim backb
 
     },
 
+    // Recepció de missatges ----------------------------
     /**
      * This method handles errors coming from the server.
      */
@@ -113,13 +120,21 @@ _.extend(window.ChatApp.Connection.prototype, Backbone.Events, { // Afegim backb
     },
 
     /**
-     * This event is triggered whenever a new message arrived from the server.
+     * This event is triggered whenever a new message arrived from the server. 
      */
     onMessage : function(message) {
 
         message.time = this.parseISO8601(message.time);
         this.messageList.add(message);
 
+    },
+
+    onUsuarioCerca: function() {
+
+        // TODO: avisar a la vista d'alguna manera
+        console.log('missatge usuarioCerca rebut');
+        ChatApp.vent.trigger('dejarEsperar');
+        
     },
 
     /**

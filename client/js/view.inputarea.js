@@ -6,7 +6,7 @@
  */
 ChatApp.View.InputArea = Backbone.View.extend({
 
-    events : {
+    events : { // declarative callbacks for DOM events within a view (whitin the el of the view). Written in the format {"event selector": "callback"}
         'submit form' : 'submit'
     },
 
@@ -15,7 +15,7 @@ ChatApp.View.InputArea = Backbone.View.extend({
      */
     submit : function(ev) {
 
-        ev.preventDefault();
+        ev.preventDefault(); // jQuery: If this method is called, the default action of the event will not be triggered.
 
         // Grabbing the current message
         var message = this.$('input').val();
