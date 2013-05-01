@@ -74,11 +74,6 @@ var io = require('socket.io').listen(8080), //Tenim el app server escoltant al 8
     // fs = require('fs'),
     users = [];
 
-io.configure(function () { 
-  io.set("transports", ["xhr-polling"]); 
-  io.set("polling duration", 10); 
-});
-
 var util = require('util'),
     connect = require('connect'),
     // port = 1337;                        // Tenim el web server escoltant al 1337
