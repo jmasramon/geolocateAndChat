@@ -76,8 +76,7 @@ var io = require('socket.io').listen(8080), //Tenim el app server escoltant al 8
 
 var util = require('util'),
     connect = require('connect'),
-    // port = 1337;                        // Tenim el web server escoltant al 1337
-    port = 80;                        // pel heroku
+    port = 1337;                        // Tenim el web server escoltant al 1337
 
 connect.createServer(connect.static(__dirname)).listen(port);
 util.puts('Listening on ' + port + '...');
