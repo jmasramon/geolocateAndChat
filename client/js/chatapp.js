@@ -11,8 +11,9 @@ window.ChatApp = { // window es el topmost objecte per defecte quan el js corre 
 /**
  * This is the socket.io server we will be connecting to.
  */
-ChatApp.serverUrl = 'http://localhost:8080/';
+// ChatApp.serverUrl = 'http://localhost:8080/';
 // ChatApp.serverUrl = 'http://hidden-savannah-7936.herokuapp.com:8080/'; // pel heroku
+ChatApp.serverUrl = 'ec2-54-244-204-217.us-west-2.compute.amazonaws.com:1337/'; // pel heroku
 
 ChatApp.vent = {}; // Simplement per passar events entre la connection i la view.esperando
 _.extend(ChatApp.vent, Backbone.Events);
