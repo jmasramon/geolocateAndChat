@@ -65,7 +65,8 @@
  *
  */
 
-var io = require('socket.io').listen(8080), //Tenim el app server escoltant al 8080
+// var io = require('socket.io').listen(8080), //Tenim el app server escoltant al 8080
+var io = require('socket.io').listen(1337), // Canvi per a AWS
     crypto = require('crypto'),
 // Canvio el codi per utilitzar el connect que és més senzill que el express
     // express = require('express'),
@@ -74,13 +75,13 @@ var io = require('socket.io').listen(8080), //Tenim el app server escoltant al 8
     // fs = require('fs'),
     users = [];
 
-var util = require('util'),
-    connect = require('connect'),
-    port = 1337;                        // Tenim el web server escoltant al 1337
+// var util = require('util'),  // Eliminat per a AWS
+//     connect = require('connect'),
+//     port = 1337;                        // Tenim el web server escoltant al 1337
 
-connect.createServer(connect.static(__dirname)).listen(port);
-util.puts('Listening on ' + port + '...');
-util.puts('Press Ctrl + C to stop.');
+// connect.createServer(connect.static(__dirname)).listen(port);
+// util.puts('Listening on ' + port + '...');
+// util.puts('Press Ctrl + C to stop.');
 
 // var app = express();
 // // all environments
