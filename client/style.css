@@ -1,0 +1,173 @@
+/*Simple resets*/
+BODY
+{
+	margin: 0;
+	height: 100%;
+	background: #FFFFFF;
+	font-family: sans-serif;
+	font-size: 14px;
+}
+UL, P, H1
+{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.template
+{
+	display: none !important;
+}
+.welcome, .esperando
+{
+	background-color: #262626;
+	position: absolute;
+	z-index: 10000;
+	width: 388px;
+	color: #FFFFFF;
+	border-radius: 15px;
+	padding: 20px;
+	left: 50%;
+	margin-left: -265px;
+	top: 150px;
+}
+FORM
+{
+	height: 90px;
+}
+.welcome H1, .esperando H1
+{
+	padding-bottom: 20px;
+}
+.welcome LABEL, .esperando LABEL
+{
+	width: 130px;
+	display: inline-block;
+	margin-top: 15px;
+}
+.welcome BUTTON, .esperando BUTTON
+{
+	display: inline-block;
+	margin-top: 9px;
+	width: 99px;
+	height: 19px;
+	margin-right: 12px;
+	margin-left: 134px;
+}
+.welcome INPUT, .esperando INPUT
+{
+	width: 200px;
+	display: inline-block;
+	margin-top: 15px;
+}
+.userList
+{
+	width: 30%;
+	position: fixed;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	border-left: transparent;
+	background: #CACACA url(light-gray);
+}
+.userList LI
+{
+	display: block;
+	margin: 5px;
+	height: 16px;
+	padding: 7px 10px 2px 30px;
+	font-size: 80%;
+	color: #FFFFFF;
+	font-weight: bold;
+	background-color: #C73;
+/*This is for the gravatar background*/
+	background-repeat: no-repeat;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px #222;
+	overflow: hidden;
+}
+.messages
+{
+	position: fixed;
+	top: 0;
+	bottom: 53px;
+	left: 0;
+	background: #FFFFFF;
+	overflow: auto;
+	width: 70%;
+}
+.messages LI
+{
+	display: block;
+	padding: 4px 20px 5px 65px;
+	margin: 3px;
+	background: #EEE;
+/*This is for the gravatar background*/
+	background-repeat: no-repeat;
+	border-radius: 15px;
+	box-shadow: 3px 3px 5px #CCC;
+}
+.messages .nickName
+{
+	font-weight: bold;
+	float: left;
+	padding-right: 10px;
+}
+.messages .messages TIME
+{
+	font-size: 90%;
+	color: #555;
+}
+.messages .messages TIME:before
+{
+	font-size: 90%;
+	color: #555;
+	content: "at ";
+}
+.messages P
+{
+	padding-top: 10px;
+}
+.inputArea
+{
+	background: #EEE;
+	position: fixed;
+	bottom: 0px;
+	height: 40px;
+	border: 2px solid #000000;
+	border-radius: 15px;
+	margin: 3px;
+	box-shadow: 3px 3px 5px #CCC;
+	width: 208px;
+}
+.inputArea INPUT
+{
+	font-size: 110%;
+	width: 99%;
+	background-color: inherit;
+	height: 39%;
+	text-align: initial;
+	border: 0px hidden transparent;
+	margin-left: 8px;
+	border-bottom: 0px solid #000000;
+	/*+placement:shift -2px 2px;*/
+	position: relative;
+	left: -2px;
+	top: 2px;
+}
+.inputArea BUTTON
+{
+	display: none;
+/*
+display: block;
+position: fixed;
+right: 200px;
+bottom: 0;
+float: right;
+border: 0;
+background: #AACCAA;
+color: white;
+font-size: 110%;
+font-weight: bold;
+height: 25px;
+width: 100px;*/
+}
