@@ -2,6 +2,7 @@
 <head>
     <title>Backbone chat</title>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
     <script type="text/javascript" src="js/geometa.js"></script>
@@ -58,8 +59,9 @@
       </script>
 
 
-    <link href="style.css" type="text/css" rel="stylesheet" />
-
+    <link href="css/bootstrap-responsive.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="js/bootstrap.js" media="handheld"></script>
+ 
     <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
     <script type="text/javascript" src="js/vendor/underscore.js"></script>
     <script type="text/javascript" src="js/vendor/backbone.js"></script>
@@ -82,14 +84,22 @@
     <section class="welcome">
         <h1>Welcome!</h1>
         <p>Please enter your nickname and email address to get started</p>  
-        <form>
-            <label for="nickName">Nickname</label>
-            <input name="nickName" required /><br />
-            <label for="email">Email address</label>
-            <input name="email" type="email" required />
+        <form class="form-horizontal">
+            <div class="control-group">
+                <label class="control-label" for="nickName">Nickname</label>
+                <div class="controls">
+                    <input name="nickName" id="nickName" class="input-medium" required />
+                </div>
+            </div>
+             <div class="control-group">
+                <label class="control-label" for="email">Email address</label>
+                <div class="controls">
+                    <input name="email" id="email" type="email" required />
+                </div>
+                <button type="submit" class="btn">Connect</button>
+            </div>
             <input name="lat" type="lat" id="lat" class="template" value="39.00"/>
             <input name="lng" type="lng" id="lng" class="template" value="37.00"/>
-            <button type="submit">Connect</button>
         </form>
     </section>
 
@@ -98,27 +108,29 @@
         <p>Por favor, espera a ser notificado</p>  
      </section>
 
-    <section class="userList template">
-        <ul>
-            <li class="template">Mustaschio</li>
-        </ul>
-    </section>
+    <div class="container">
+       <section class="messages template">
+            <ul class="no-padding">
+                <li class="template">
+                    <div class="nickName">
+                        Mustachio
+                     </div>
+                     <time>12:04am</time>
+                     <p>Hello world!</p>
+                </li>
+            </ul>
+        </section>
 
-    <section class="messages">
-        <ul>
-            <li class="template">
-                <div class="nickName">
-                    Mustachio
-                 </div>
-                 <time>12:04am</time>
-                 <p>Hello world!</p>
-            </li>
-        </ul>
-    </section>
+        <section class="userList template">
+            <ul class="no-padding">
+                <li class="template">Mustaschio</li>
+            </ul>
+        </section>
+    </div>
 
     <section class="inputArea template">
         <form>
-            <input type="text" name="message" autocomplete="off" />
+            <i class="icon-edit"></i><input type="text" name="message" autocomplete="off" />
             <button type="submit">Submit</button>
         </form>
     </section>

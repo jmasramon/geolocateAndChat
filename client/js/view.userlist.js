@@ -49,7 +49,8 @@ ChatApp.View.UserList = Backbone.View.extend({
 
         // Adding the user id, for easy identification
         newElem.data('userId', user.get('id'));
-        this.$el.append(newElem);
+        newElem.show();
+        this.$('ul.no-padding').append(newElem);
 
     },
 

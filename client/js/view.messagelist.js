@@ -49,7 +49,9 @@ ChatApp.View.MessageList = Backbone.View.extend({
             backgroundImage: "url('" + message.get('gravatar') + "?s=55&d=retro')"
         });
 
-        this.$el.append(newElem);
+        newElem.show();
+
+        this.$('ul.no-padding').append(newElem);
 
         // Scrolling all the way to the bottom
         this.$el.scrollTop(this.el.scrollHeight);
