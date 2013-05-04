@@ -39,10 +39,7 @@
 
         // Hiding the welcome screen
         this.$el.hide();
-        // Showing the user list and the text area
-        $('section.userList').removeClass('template');
-        $('section.messages').removeClass('template');
-        $('section.inputArea').removeClass('template');
+        
 
         ChatApp.vent.trigger('mostrarEsperando');
     }
