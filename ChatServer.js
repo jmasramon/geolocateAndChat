@@ -156,7 +156,13 @@ function dosCerca(){
     // console.log("comprobando cercania");
     if (users && users[0] && users[1]){
        
-        var dist = Math.sqrt(Math.pow((users[0].lat-users[1].lat),2)+Math.pow((users[0].lat-users[1].lat),2));
+        //var dist = Math.sqrt(Math.pow((users[0].lat-users[1].lat),2)+Math.pow((users[0].lng-users[1].lng),2));
+
+        var R = 6371000; // m
+        var d = Math.acos(Math.sin(users[0].lat)*Math.sin(users[1].lat) + 
+                          Math.cos(users[0].lat)*Math.cos(users[1].lat) *
+                          Math.cos(users[1].lng-users[0].lng)) * R;
+
         console.log("Usuarios: " + users[0].nickName + " con coords (" + users[0].lat + " , " + users[0].lng  + ") "  + " y " + users[1].nickName+ " con coords (" + users[1].lat + " , " + users[1].lng  + ") estan a dist=" + dist);
         if ( dist < 10 ) return true;
         return false;
