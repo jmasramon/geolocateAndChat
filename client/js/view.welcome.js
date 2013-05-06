@@ -8,15 +8,15 @@
  *    nickName
  *    email
  */
- ChatApp.View.Welcome = Backbone.View.extend({
+ChatApp.View.Welcome = Backbone.View.extend({
 
-    events : {
+    events: {
 
-        "submit form" : "submit"
+        "submit form": "submit"
 
     },
 
-    submit : function(ev) {
+    submit: function(ev) {
 
         // Making sure the browser doesn't submit the form
         ev.preventDefault();
@@ -31,15 +31,15 @@
 
         // Triggering the 'submit' event
         this.trigger('submit', {
-            nickName : nickName,
-            email    : email
-            , lat      : lat
-            , lng      : lng
+            nickName: nickName,
+            email: email,
+            lat: lat,
+            lng: lng
         });
 
         // Hiding the welcome screen
         this.$el.hide();
-        
+
 
         ChatApp.vent.trigger('mostrarEsperando');
     }

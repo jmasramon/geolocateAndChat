@@ -127,47 +127,4 @@ FORM
 {
 	padding-top: 10px;
 }
-.inputArea
-{
-	background: #EEE;
-	position: fixed;
-	bottom: 0px;
-	height: 40px;
-	border: 2px solid #000000;
-	border-radius: 15px;
-	margin: 3px;
-	box-shadow: 3px 3px 5px #CCC;
-	width: 208px;
-}
-.inputArea INPUT
-{
-	font-size: 110%;
-	width: 99%;
-	background-color: inherit;
-	height: 39%;
-	text-align: initial;
-	border: 0px hidden transparent;
-	margin-left: 8px;
-	border-bottom: 0px solid #000000;
-	/*+placement:shift -2px 2px;*/
-	position: relative;
-	left: -2px;
-	top: 2px;
-}
-.inputArea BUTTON
-{
-	display: none;
-/*
-display: block;
-position: fixed;
-right: 200px;
-bottom: 0;
-float: right;
-border: 0;
-background: #AACCAA;
-color: white;
-font-size: 110%;
-font-weight: bold;
-height: 25px;
-width: 100px;*/
-}
+Ø

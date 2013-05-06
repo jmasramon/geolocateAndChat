@@ -158,8 +158,8 @@ function dosCerca(){
        
         //var dist = Math.sqrt(Math.pow((users[0].lat-users[1].lat),2)+Math.pow((users[0].lng-users[1].lng),2));
 
-        var R = 6371000; // m
-        var d = Math.acos(Math.sin(users[0].lat)*Math.sin(users[1].lat) + 
+        var R = 6371; // Km
+        var dist = Math.acos(Math.sin(users[0].lat)*Math.sin(users[1].lat) + 
                           Math.cos(users[0].lat)*Math.cos(users[1].lat) *
                           Math.cos(users[1].lng-users[0].lng)) * R;
 
