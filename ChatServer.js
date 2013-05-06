@@ -67,13 +67,13 @@
 
 // var io = require('socket.io').listen(8080), //Tenim el app server escoltant al 8080
 var io = require('socket.io').listen(1337), // Canvi per a AWS
-    crypto = require('crypto'),
+  crypto = require('crypto'),
 // Canvio el codi per utilitzar el connect que és més senzill que el express
     // express = require('express'),
     // http = require('http'),
     // path = require('path'),
     // fs = require('fs'),
-    users = [];
+  users = [];
 
 // var util = require('util'),  // Eliminat per a AWS
 //     connect = require('connect'),
@@ -132,7 +132,7 @@ var io = require('socket.io').listen(1337), // Canvi per a AWS
 
 
 function User() {
-    this.id = ++User.lastId;
+  this.id = ++User.lastId;
 }
 
 User.prototype.id = 0;
@@ -140,7 +140,7 @@ User.prototype.email = null;
 User.prototype.nickName = null;
 User.prototype.lat = null;
 User.prototype.lng = null;
-User.prototype.serialize = function() {
+User.prototype.serialize = function () {
     return {
         id : this.id,
         nickName : this.nickName,
@@ -150,24 +150,31 @@ User.prototype.serialize = function() {
 };
 
 User.lastId = 0;
+var R = 6371; // Km
+ 
+// Formula correcta però no molt precisa
+function distancia (user1, user2) {
+    return Math.acos(Math.sin(user1.lat)*Math.sin(user2.lat) + 
+                          Math.cos(user1.lat)*Math.cos(user2.lat) *
+                          Math.cos(user2.lng-user1.lng)) * R;
+};
 
 ///////////////////////////////
-function dosCerca(){
+function dosCerca (){
     // console.log("comprobando cercania");
     if (users && users[0] && users[1]){
-       
-        //var dist = Math.sqrt(Math.pow((users[0].lat-users[1].lat),2)+Math.pow((users[0].lng-users[1].lng),2));
-
-        var R = 6371; // Km
-        var dist = Math.acos(Math.sin(users[0].lat)*Math.sin(users[1].lat) + 
-                          Math.cos(users[0].lat)*Math.cos(users[1].lat) *
-                          Math.cos(users[1].lng-users[0].lng)) * R;
-
-        console.log("Usuarios: " + users[0].nickName + " con coords (" + users[0].lat + " , " + users[0].lng  + ") "  + " y " + users[1].nickName+ " con coords (" + users[1].lat + " , " + users[1].lng  + ") estan a dist=" + dist);
-        if ( dist < 10 ) return true;
+        for ( var i = 0; i <= users.length - 1; i++ ) {
+            for ( var j = i + 1; j <= users.length -1; j++) {
+                console.log("i="+i+" i j="+j);
+                var dist = distancia(users[i],users[j]);
+                console.log("Usuarios: " + users[i].nickName + " con coords (" + users[i].lat + " , " + users[i].lng  + ") "  + 
+                    " y " + users[j].nickName+ " con coords (" + users[j].lat + " , " + users[j].lng  + ") estan a dist=" + dist);
+                if ( dist < 10 ) return true;
+            }
+        }
         return false;
     }
-}
+};
 
 
 //////////////////////////////
