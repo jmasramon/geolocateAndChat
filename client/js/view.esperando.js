@@ -21,7 +21,10 @@ ChatApp.View.Esperando = Backbone.View.extend({
 	mostrarEsperando: function() {
 	
 		console.log("Comencem a esperar");
+    $('section.userList').addClass('template');
+    $('section.messages').addClass('template');
+    $('section.inputArea').addClass('template');
 		self.$el.removeClass('template');
-	
+		self.$el.show();
 	}
 });	

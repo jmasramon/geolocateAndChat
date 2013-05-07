@@ -4,10 +4,8 @@
         Backbone chat
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true">
-    </script>
-    <script type="text/javascript" src="js/geometa.js">
-    </script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"> </script>
+    <script type="text/javascript" src="js/geometa.js"> </script>
     <script type="text/javascript">
             function initialise() {
             prepareGeolocation();
@@ -26,23 +24,23 @@
         function positionError(err) {
             var msg;
             switch (err.code) {
-            case err.UNKNOWN_ERROR:
-                msg = "Unable to find your location";
-                break;
-            case err.PERMISSION_DENINED:
-                msg = "Permission denied in finding your location";
-                break;
-            case err.POSITION_UNAVAILABLE:
-                msg = "Your location is currently unknown";
-                break;
-            case err.BREAK:
-                msg = "Attempt to find location took too long";
-                break;
-            default:
-                msg = "Location detection not supported in browser";
+                case err.UNKNOWN_ERROR:
+                    msg = "Unable to find your location";
+                    break;
+                case err.PERMISSION_DENINED:
+                    msg = "Permission denied in finding your location";
+                    break;
+                case err.POSITION_UNAVAILABLE:
+                    msg = "Your location is currently unknown";
+                    break;
+                case err.BREAK:
+                    msg = "Attempt to find location took too long";
+                    break;
+                default:
+                    msg = "Location detection not supported in browser";
             }
             console.info(msg);
-            document.getElementById('info').innerHTML = msg;
+            // document.getElementById('info').innerHTML = msg;
         }
 
         function positionSuccess(position) {
@@ -60,7 +58,6 @@
         }
     </script>
     <link href="css/bootstrap-responsive.css" type="text/css" rel="stylesheet" />
-    <script type="text/javascript" src="js/bootstrap.js" media="handheld">    </script>
     <script type="text/javascript" src="js/vendor/jquery.min.js">    </script>
     <script type="text/javascript" src="js/vendor/underscore.js">    </script>
     <script type="text/javascript" src="js/vendor/backbone.js">    </script>

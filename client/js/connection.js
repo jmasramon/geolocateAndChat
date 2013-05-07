@@ -9,12 +9,12 @@
  * To make the initial connection, just call the 'connect' function
  * and pass a nickName and email address.
  */
-ChatApp.Connection = function(userList, messageList) {
+ChatApp.Connection = function (userList, messageList) {
 
     this.userList = userList;
     this.messageList = messageList;
 
-}
+};
 
 _.extend(window.ChatApp.Connection.prototype, Backbone.Events, { // Afegim backbone events a connection amb underescore 
                                                                  // No acabo d'entednre perquè !!!
@@ -99,6 +99,7 @@ _.extend(window.ChatApp.Connection.prototype, Backbone.Events, { // Afegim backb
      * This event is triggered whenever a user leaves the room.
      */
     onPart : function(user) {
+        console.log('Usuari se nha anat. Nhi havia #');
 
         // Finding the user with this id.
         var userModel = this.userList.find(
@@ -107,7 +108,10 @@ _.extend(window.ChatApp.Connection.prototype, Backbone.Events, { // Afegim backb
             }
         );
         this.userList.remove(userModel);
-
+        if (this.userlist == undefined){
+            console.log('Volvemos a esperar.');
+            ChatApp.vent.trigger('mostrarEsperando');
+        }
     },
 
     /**

@@ -75,13 +75,13 @@ var io = require('socket.io').listen(1337), // Canvi per a AWS
     // fs = require('fs'),
   users = [];
 
-// var util = require('util'),  // Eliminat per a AWS
-//     connect = require('connect'),
-//     port = 1337;                        // Tenim el web server escoltant al 1337
+var util = require('util'),  // Eliminat per a AWS
+    connect = require('connect'),
+    port = 8080;                        // Tenim el web server escoltant al 1337
 
-// connect.createServer(connect.static(__dirname)).listen(port);
-// util.puts('Listening on ' + port + '...');
-// util.puts('Press Ctrl + C to stop.');
+connect.createServer(connect.static(__dirname)).listen(port);
+util.puts('Listening on ' + port + '...');
+util.puts('Press Ctrl + C to stop.');
 
 // var app = express();
 // // all environments
@@ -179,74 +179,113 @@ function dosCerca (){
 
 //////////////////////////////
 
-io.sockets.on('connection', function(socket) {
 
-    // TODO: acabar-ho bé. Ara se'n crea un per cada login i per tant envia dos missatges pel socket
-    if (!interval){
-        var interval = setInterval(function(){ 
-            if (dosCerca()) { 
-                console.log("dos cerca"); 
-                socket.broadcast.emit('usuarioCerca');
-                clearInterval(interval); 
-            }
-        }, 1000);
-    }
+var interval;
 
-    var user = new User();
-    socket.set('user', user);
-
-    socket.on('nick', function(info) {
-
-        if (!info.email || !info.nickName) {
-            socket.emit('error', {
-                message: "Both a nickName and an email property must be supplied"
-            });
-            return;
+function vigilar (chatRoom) {
+   console.log("Setting interval. For socket = " + socket.id);
+   interval = setInterval(function(){
+        console.log("checking proximity. For socket = " + socket.id); 
+        if (dosCerca()) { 
+            console.log("dos cerca. For socket = " + socket.id); 
+            // socket.broadcast.emit('usuarioCerca');
+            chatRoom.emit('usuarioCerca');
+            clearInterval(interval); 
+            interval = undefined;
         }
-        user.email = info.email;
-        user.nickName = info.nickName;
-        user.lat = info.lat;
-        user.lng = info.lng;
-        users.push(user); // Guarda el nou usu a la llista d'usus connectats. No hi ha bd. Tot es fa en t real (en memo)
+    }, 1000);
+};
 
-        console.log(user);
+// io.sockets.on('connection', function(socket) {
+var chatRoom = io
+    .of('/chat')
+    .on('connection', function(socket) {
+        console.log("Connection stablished. For socket = " + socket.id);    
 
-        socket.broadcast.emit('join', user.serialize()); // envia als usuaris connectats les dades del nou connectat
-        socket.emit('userList', users.map(
-            function(user) {
-                return user.serialize();
+        // TODO: acabar-ho bé. Ara se'n crea un per cada login i per tant envia 
+        // dos missatges pel socket. Però sinó, un dels dos no reb el missatge
+        if (/* users.length == 0 && */ !interval){
+           console.log("Setting interval. For socket = " + socket.id);
+           interval = setInterval(function(){
+                console.log("checking proximity. For socket = " + socket.id); 
+                if (dosCerca()) { 
+                    console.log("dos cerca. For socket = " + socket.id); 
+                    // socket.broadcast.emit('usuarioCerca');
+                    chatRoom.emit('usuarioCerca');
+                    clearInterval(interval); 
+                    interval = undefined;
+                }
+            }, 1000);
+        }
+
+        var user = new User();
+        socket.set('user', user);
+
+        socket.on('nick', function(info) {
+
+            if (!info.email || !info.nickName) {
+                socket.emit('error', {
+                    message: "Both a nickName and an email property must be supplied"
+                });
+                return;
             }
-        ));
+            user.email = info.email;
+            user.nickName = info.nickName;
+            user.lat = info.lat;
+            user.lng = info.lng;
+            users.push(user); // Guarda el nou usu a la llista d'usus connectats. No hi ha bd. Tot es fa en t real (en memo)
+
+            console.log('New array of users: ' + JSON.stringify(users, null, 4));
+
+            chatRoom.emit('join', user.serialize()); // envia als usuaris connectats les dades del nou connectat
+            socket.emit('userList', users.map(
+                function(user) {
+                    return user.serialize();
+                }
+            ));
+
+            // if (users.length >= 2 && !interval){
+            //     console.log("Setting another interval");
+            //     interval = setInterval(function(){
+            //         console.log("checking proximity"); 
+            //         if (dosCerca()) { 
+            //             console.log("dos cerca"); 
+            //             chatRoom.emit('usuarioCerca');
+            //             clearInterval(interval); 
+            //             interval = undefined;
+            //         }
+            //     }, 1000);
+            // }
+
+        });
+
+        socket.on('disconnect', function() {
+
+            console.log("Initial users: " + JSON.stringify(users, null, 4) + " For socket = " + socket.id);
+            console.log("User num " + users.indexOf(user) + " disconnecting." + " For socket = " + socket.id);
+            users.splice(
+                users.indexOf(user),
+                1
+            ); // Elimina l'usu de la llista d'usus connectats
+            console.log("Final users: " + JSON.stringify(users, null, 4) + " For socket = " + socket.id);
+            chatRoom.emit('part', user.serialize()); // envia als usus que queden connectats les dades del que se'n va
+
+        });
+
+        socket.on('sendMessage', function(message) {
+
+            var payload = user.serialize();
+            payload.message = message;
+            payload.time = new Date();
+            payload.userId = payload.id;
+            delete payload.id; // ????
+
+            // Sending the message back to the user
+            // socket.emit('message', payload);
+            // Sending the message to everyone else
+            chatRoom.emit('message',payload);
+
+        });
 
     });
-
-    socket.on('disconnect', function() {
-
-        console.log(users);
-        console.log(users.indexOf(user));
-        users.splice(
-            users.indexOf(user),
-            1
-        ); // Elimina l'usu de la llista d'usus connectats
-        console.log(users);
-        socket.broadcast.emit('part', user.serialize()); // envia als usus que queden connectats les dades del que se'n va
-
-    });
-
-    socket.on('sendMessage', function(message) {
-
-        var payload = user.serialize();
-        payload.message = message;
-        payload.time = new Date();
-        payload.userId = payload.id;
-        delete payload.id; // ????
-
-        // Sending the message back to the user
-        socket.emit('message', payload);
-        // Sending the message to everyone else
-        socket.broadcast.emit('message',payload);
-
-    });
-
-});
 
