@@ -175,9 +175,9 @@ var interval;
 function vigilar(chatRoom, socket) {
     console.log("Setting interval. For socket = " + socket.id);
     interval = setInterval(function() {
-        // console.log("checking proximity. For socket = " + socket.id);
+        console.log("checking proximity. For socket = " + socket.id);
         if (dosCerca()) {
-            // console.log("dos cerca. For socket = " + socket.id);
+            console.log("dos cerca. For socket = " + socket.id);
             // socket.broadcast.emit('usuarioCerca');
             chatRoom.emit('usuarioCerca');
             clearInterval(interval);
@@ -266,8 +266,8 @@ var chatRoom = io.of('/chat').on('connection', function(socket) {
     });
 
     socket.on('positionChange', function(info) {
-        // console.log('Datos recividos: ' + info.nickName + ', ' + info.lat + ', ' + info.lng);
-        // console.log("Initial users: " + JSON.stringify(users, null, 4));
+        console.log('Datos recividos: ' + info.nickName + ', ' + info.lat + ', ' + info.lng);
+        console.log("Initial users: " + JSON.stringify(users, null, 4));
 
         if (!info.lat || !info.lng || !info.nickName) {
             socket.emit('error', {
@@ -276,23 +276,23 @@ var chatRoom = io.of('/chat').on('connection', function(socket) {
             return;
         }
 
-        // console.log("Initial info: " + JSON.stringify(info, null, 4));
-        // console.log("Initial nickName: " + info.nickName);
+        console.log("Initial info: " + JSON.stringify(info, null, 4));
+        console.log("Initial nickName: " + info.nickName);
         movingUser = grep(users, function(e, i) {
             return e.nickName == info.nickName;
         }, false);
 
-        // console.log('moving user = ' + JSON.stringify(movingUser[0], null, 4));
-        // console.log('Array of users: ' + JSON.stringify(users, null, 4));
-        // console.log('Index of movingUser: ' + users.indexOf(movingUser[0]));
+        console.log('moving user = ' + JSON.stringify(movingUser[0], null, 4));
+        console.log('Array of users: ' + JSON.stringify(users, null, 4));
+        console.log('Index of movingUser: ' + users.indexOf(movingUser[0]));
 
         users.splice(users.indexOf(movingUser[0]), 1); // Elimina l'usu de la llista d'usus connectats
-        // console.log('Array of users after splice: ' + JSON.stringify(users, null, 4));
+        console.log('Array of users after splice: ' + JSON.stringify(users, null, 4));
 
         movingUser[0].lat = info.lat;
         movingUser[0].lng = info.lng;
         users.push(movingUser[0]); // Guarda el nou usu a la llista d'usus connectats. No hi ha bd. Tot es fa en t real (en memo)
-        // console.log('User moved. New array of users: ' + JSON.stringify(users, null, 4));
+        console.log('User moved. New array of users: ' + JSON.stringify(users, null, 4));
     });
 
 });
