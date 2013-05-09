@@ -76,13 +76,13 @@ var io = require('socket.io').listen(1337),
     // fs = require('fs'),
     users = [];
 
-var util = require('util'),
-    // Eliminat per a AWS
-    connect = require('connect'),
-    port = 8080; // Tenim el web server escoltant al 1337
-connect.createServer(connect.static(__dirname)).listen(port);
-util.puts('Listening on ' + port + '...');
-util.puts('Press Ctrl + C to stop.');
+// var util = require('util'),
+//     // Eliminat per a AWS
+//     connect = require('connect'),
+//     port = 8080; // Tenim el web server escoltant al 1337
+// connect.createServer(connect.static(__dirname)).listen(port);
+// util.puts('Listening on ' + port + '...');
+// util.puts('Press Ctrl + C to stop.');
 
 // var app = express();
 // // all environments
