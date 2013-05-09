@@ -26,6 +26,12 @@ ChatApp.View.MessageList = Backbone.View.extend({
         var newElem = this.$('li.template').clone();
         newElem.removeClass('template');
 
+        if (message.get('nickName') == $('input[name=nickName]').val()){
+            newElem.addClass('left');
+        } else {
+            newElem.addClass('right');
+        }
+ 
         // Setting the nickname
         newElem.find('.nickName').text(message.get('nickName'));
 

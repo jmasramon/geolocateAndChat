@@ -67,6 +67,24 @@ _.extend(window.ChatApp.Connection.prototype, Backbone.Events, { // Afegim backb
 
     },
 
+    /**
+     * Sends a positon change to the server
+     */
+    positionChange : function(nickName, lat, lng) {
+        // console.log('Position change detected. Sending mes to server.'+JSON.stringify({
+        //     nickName : nickName,
+        //     lat      : lat,
+        //     lng      : lng
+        // }, null, 4));
+        this.socket.emit('positionChange', {
+            nickName : nickName,
+            lat      : lat,
+            lng      : lng
+       });
+
+    },
+
+
     // Recepció de missatges ----------------------------
     /**
      * This method handles errors coming from the server.

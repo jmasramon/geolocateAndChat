@@ -65,6 +65,9 @@ ChatApp.Application.prototype = {
         welcomeView.on('submit', function(userInfo) {
             self.connection.connect(userInfo.nickName, userInfo.email, userInfo.lat, userInfo.lng);
         });
+        welcomeView.on('positionChange', function(userInfo) {
+            self.connection.positionChange(userInfo.nickName, userInfo.lat, userInfo.lng);
+        });
         inputAreaView.on('message', function(message) { // triggered by the inputAreaView when a message is written
             self.connection.message(message);
         });

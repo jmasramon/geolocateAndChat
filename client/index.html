@@ -51,11 +51,19 @@
             // Store them in the form hidden input 
             document.getElementById('lat').value = coords.latitude;
             // document.getElementById('lat').style.visibility='visible';
-            console.info(document.getElementById('lat').value);
+            // console.info(document.getElementById('lat').value);
             document.getElementById('lng').value = coords.longitude;
             // document.getElementById('lng').style.visibility='visible';
-            console.info(document.getElementById('lng').value);
+            // console.info(document.getElementById('lng').value);
         }
+
+        // function controlarMovimiento(){
+        //     setInterval( function () {
+        //         // console.log('Miramos posición actual');
+        //         doGeolocation();
+        //         ChatApp.Connection.positionChange(document.getElementById('nickName').value, document.getElementById('lat').value, document.getElementById('lng').value);
+        //     }, 1000);
+        // }
     </script>
     <link href="css/bootstrap-responsive.css" type="text/css" rel="stylesheet" />
     <script type="text/javascript" src="js/vendor/jquery.min.js">    </script>
@@ -116,7 +124,7 @@
     <div class="container">
         <section class="messages template">
             <ul class="no-padding">
-                <li class="template">
+                <li class="template triangle-border">
                     <div class="nickName">
                         Mustachio
                     </div>

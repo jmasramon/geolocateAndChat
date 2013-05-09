@@ -40,8 +40,33 @@ ChatApp.View.Welcome = Backbone.View.extend({
         // Hiding the welcome screen
         this.$el.hide();
 
-
         ChatApp.vent.trigger('mostrarEsperando');
+
+        console.log('Empezamos a controlar el movimiento.')
+        this.controlarMovimiento();
+
+    },
+
+    controlarMovimiento: function (){
+        self = this;
+        function vigila(self) {
+            // console.log('Miramos posición actual');
+            doGeolocation();
+            
+            var nickName = this.$('input[name=nickName]').val();
+            var lat = this.$('input[name=lat]').val();
+            var lng = this.$('input[name=lng]').val();
+
+            // console.log('La pos actual para '+nickName+' es:('+lat+', '+lng+')');
+            self.trigger('positionChange', {
+                nickName: nickName,
+                lat: lat,
+                lng: lng
+            });
+            // ChatApp.Connection.positionChange(document.getElementById('nickName').value, document.getElementById('lat').value, document.getElementById('lng').value);
+        }
+        setInterval( function () { vigila(self); }, 1000);
     }
+
 
 });
