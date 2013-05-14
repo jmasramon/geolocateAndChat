@@ -15,7 +15,6 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChatServer-ck.js" afterPath="$PROJECT_DIR$/ChatServer-ck.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChatServer.js" afterPath="$PROJECT_DIR$/ChatServer.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/application.js" afterPath="$PROJECT_DIR$/client/js/application.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/vendor/backbone.js" afterPath="$PROJECT_DIR$/client/js/vendor/backbone.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/css/bootstrap-responsive.css" afterPath="$PROJECT_DIR$/client/css/bootstrap-responsive.css" />
@@ -443,8 +442,9 @@
     <file path="/a.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438169923" ignored="false" />
     <file path="/ChatServer.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368467985718" ignored="false" />
     <file path="/a.dummy" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368475289649" ignored="false" />
-    <file path="/view.esperando.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368523975208" ignored="false" />
+    <file path="/view.esperando.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368525981780" ignored="false" />
     <file path="/index.html" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368523854507" ignored="false" />
+    <file path="$PROJECT_DIR$/../testing/test/testCallbackAccess.jasmine.coffee" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368524203009" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -467,9 +467,9 @@
       <file leaf-file-name="view.esperando.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/js/view.esperando.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="28" selection-start="488" selection-end="488" vertical-scroll-proportion="0.0">
+            <state line="14" column="0" selection-start="374" selection-end="625" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#663#1238#0" expanded="true" />
+                <element signature="e#1494#2069#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -918,7 +918,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#0#136#0" expanded="true" />
+            <element signature="e#0#136#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -927,7 +927,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -945,9 +945,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/js/view.esperando.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="28" selection-start="488" selection-end="488" vertical-scroll-proportion="0.0">
+        <state line="14" column="0" selection-start="374" selection-end="625" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#663#1238#0" expanded="true" />
+            <element signature="e#1494#2069#0" expanded="true" />
           </folding>
         </state>
       </provider>

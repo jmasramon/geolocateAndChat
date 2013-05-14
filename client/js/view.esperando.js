@@ -7,11 +7,33 @@ ChatApp.View.Esperando = Backbone.View.extend({
         this.el = $('section.esperando');
         ChatApp.View.Esperando.evalSound = function () {
             console.log('Entrant a evalSound')
-            var thisSound;
-            thisSound = document.getElementById('sound1');
-            console.log('evalSound: element agafat ' + thisSound.id);
-            console.log('evalSound: cridem a play()');
-            thisSound.Play();
+//            var thisSound;
+//            thisSound = document.getElementById('sound1');
+//            console.log('evalSound: element agafat ' + thisSound.id);
+//            console.log('evalSound: cridem a play()');
+//            thisSound.Play();
+
+            if('webkitAudioContext' in window) {
+                var myAudioContext = new webkitAudioContext();
+            } else {
+                console.log('no webkitAudioContext')
+            }
+
+            var source = myAudioContext.createOscillator();
+            source.type = 0; // sine wave
+
+            var compressor = myAudioContext.createDynamicsCompressor();
+            var reverb = myAudioContext.createConvolver();
+            var volume = myAudioContext.createGainNode();
+
+            // connect source through a series of filters
+            source.connect(compressor);
+            compressor.connect(reverb);
+            reverb.connect(volume);
+            volume.connect(myAudioContext.destination);
+
+            console.log('evalSound: cridem a source.noteOn(0)');
+            source.noteOn(0);
         }
     },
 
