@@ -17,14 +17,14 @@ ChatApp.Connection = function (userList, messageList) {
 };
 
 _.extend(window.ChatApp.Connection.prototype, Backbone.Events, { // Afegim backbone events a connection amb underescore 
-                                                                 // No acabo d'entednre perquè !!!
-    socket : null,
-    userList : null,
+    // No acabo d'entednre perquè !!!
+    socket:   null,
+    userList: null,
 
     /**
      * Connect to the server
      */
-    connect : function(nickName, email, lat, lng) {
+    connect: function (nickName, email, lat, lng) {
 
         this.socket = io.connect(
             ChatApp.serverUrl
@@ -34,12 +34,24 @@ _.extend(window.ChatApp.Connection.prototype, Backbone.Events, { // Afegim backb
         var self = this;
 
         // Escoltem els misstges del servidor
-        this.socket.on('error', function(arg) { self.onError(arg) });
-        this.socket.on('userList', function(arg) { self.onUserList(arg) });
-        this.socket.on('part', function(arg) { self.onPart(arg) });
-        this.socket.on('join', function(arg) { self.onJoin(arg) });
-        this.socket.on('message', function(arg) { self.onMessage(arg) });
-        this.socket.on('usuarioCerca', function() { self.onUsuarioCerca() });
+        this.socket.on('error', function (arg) {
+            self.onError(arg)
+        });
+        this.socket.on('userList', function (arg) {
+            self.onUserList(arg)
+        });
+        this.socket.on('part', function (arg) {
+            self.onPart(arg)
+        });
+        this.socket.on('join', function (arg) {
+            self.onJoin(arg)
+        });
+        this.socket.on('message', function (arg) {
+            self.onMessage(arg)
+        });
+        this.socket.on('usuarioCerca', function () {
+            self.onUsuarioCerca()
+        });
 
     },
 
@@ -47,21 +59,19 @@ _.extend(window.ChatApp.Connection.prototype, Backbone.Events, { // Afegim backb
     /**
      * Sets the current user's nick and email address.
      */
-    nick : function(nickName, email, lat, lng) {
+    nick:    function (nickName, email, lat, lng) {
 
         this.socket.emit('nick', {
-            nickName : nickName,
-            email    : email
-            , lat      : lat
-            , lng      : lng
-       });
+            nickName: nickName,
+            email:    email, lat: lat, lng: lng
+        });
 
     },
 
     /**
      * Sends a message to the server
      */
-    message : function(message) {
+    message: function (message) {
 
         this.socket.emit('sendMessage', message);
 
@@ -70,26 +80,25 @@ _.extend(window.ChatApp.Connection.prototype, Backbone.Events, { // Afegim backb
     /**
      * Sends a positon change to the server
      */
-    positionChange : function(nickName, lat, lng) {
+    positionChange: function (nickName, lat, lng) {
         // console.log('Position change detected. Sending mes to server.'+JSON.stringify({
         //     nickName : nickName,
         //     lat      : lat,
         //     lng      : lng
         // }, null, 4));
         this.socket.emit('positionChange', {
-            nickName : nickName,
-            lat      : lat,
-            lng      : lng
-       });
+            nickName: nickName,
+            lat:      lat,
+            lng:      lng
+        });
 
     },
-
 
     // Recepció de missatges ----------------------------
     /**
      * This method handles errors coming from the server.
      */
-    onError : function(errorInfo) {
+    onError:        function (errorInfo) {
 
         if (console.log) {
             console.log('Server error: ' + errorInfo.message);
@@ -103,11 +112,11 @@ _.extend(window.ChatApp.Connection.prototype, Backbone.Events, { // Afegim backb
      * This event is triggered when a full userlist is sent by the server. This
      * is basically a 'reset' of the user list.
      */
-    onUserList : function(users) {
+    onUserList: function (users) {
 
         var self = this;
 
-        _.each(users, function(user) {
+        _.each(users, function (user) {
             self.userList.add(user);
         });
 
@@ -116,17 +125,18 @@ _.extend(window.ChatApp.Connection.prototype, Backbone.Events, { // Afegim backb
     /**
      * This event is triggered whenever a user leaves the room.
      */
-    onPart : function(user) {
-        console.log('Usuari se nha anat. Nhi havia #');
+    onPart: function (user) {
+        console.log('Usuari se nha anat. N\'hi havia # ' + this.userList.length);
 
         // Finding the user with this id.
         var userModel = this.userList.find(
-            function(checkUser) {
+            function (checkUser) {
                 return checkUser.get('id') == user.id;
             }
         );
         this.userList.remove(userModel);
-        if (this.userlist == undefined){
+        console.log('Usuari eliminat del model. En queden # ' + this.userList.length);
+        if (typeof this.userList === 'undefined' || this.userList.length <= 1) { // Si no queda ningú més connectat (a part de nosaltres mateixos)
             console.log('Volvemos a esperar.');
             ChatApp.vent.trigger('mostrarEsperando');
         }
@@ -135,28 +145,28 @@ _.extend(window.ChatApp.Connection.prototype, Backbone.Events, { // Afegim backb
     /**
      * This event is triggered whenever a new user enters the room.
      */
-    onJoin : function(user) {
+    onJoin: function (user) {
 
         this.userList.add(user);
 
     },
 
     /**
-     * This event is triggered whenever a new message arrived from the server. 
+     * This event is triggered whenever a new message arrived from the server.
      */
-    onMessage : function(message) {
+    onMessage: function (message) {
 
         message.time = this.parseISO8601(message.time);
         this.messageList.add(message);
 
     },
 
-    onUsuarioCerca: function() {
+    onUsuarioCerca: function () {
 
         // TODO: avisar a la vista d'alguna manera
         console.log('missatge usuarioCerca rebut');
         ChatApp.vent.trigger('dejarEsperar');
-        
+
     },
 
     /**
@@ -166,7 +176,7 @@ _.extend(window.ChatApp.Connection.prototype, Backbone.Events, { // Afegim backb
      *
      * @url http://anentropic.wordpress.com/2009/06/25/javascript-iso8601-parser-and-pretty-dates/
      */
-    parseISO8601 : function(input) {
+    parseISO8601: function (input) {
 
         var parts = input.split('T'),
             dateParts = parts[0].split('-'),
@@ -177,7 +187,7 @@ _.extend(window.ChatApp.Connection.prototype, Backbone.Events, { // Afegim backb
             _date = new Date;
 
         _date.setUTCFullYear(Number(dateParts[0]));
-        _date.setUTCMonth(Number(dateParts[1])-1);
+        _date.setUTCMonth(Number(dateParts[1]) - 1);
         _date.setUTCDate(Number(dateParts[2]));
         _date.setUTCHours(Number(timeHours));
         _date.setUTCMinutes(Number(timeSubParts[1]));

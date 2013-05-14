@@ -4,14 +4,14 @@
  */
 ChatApp.View.MessageList = Backbone.View.extend({
 
-    initialize : function() {
+    initialize: function () {
 
         if (!this.collection) {
             throw "To initialize the MessageList view, you must pass the 'collection' option.";
         }
         var self = this;
 
-        this.collection.bind('add', function(message) {
+        this.collection.bind('add', function (message) {
             self.addMessage(message);
         });
 
@@ -20,18 +20,18 @@ ChatApp.View.MessageList = Backbone.View.extend({
     /**
      * This method is called whenever a new message was received from the server.
      */
-    addMessage : function(message) {
+    addMessage: function (message) {
 
         // Creating a new message element
         var newElem = this.$('li.template').clone();
         newElem.removeClass('template');
 
-        if (message.get('nickName') == $('input[name=nickName]').val()){
+        if (message.get('nickName') == $('input[name=nickName]').val()) {
             newElem.addClass('left');
         } else {
             newElem.addClass('right');
         }
- 
+
         // Setting the nickname
         newElem.find('.nickName').text(message.get('nickName'));
 
@@ -39,9 +39,9 @@ ChatApp.View.MessageList = Backbone.View.extend({
         var ft = message.get('time');
         var hour = ft.getHours();
         var min = ft.getMinutes();
-        if (min<10) min = '0' + min;
+        if (min < 10) min = '0' + min;
         var sec = ft.getSeconds();
-        if (sec<10) sec = '0' + sec;
+        if (sec < 10) sec = '0' + sec;
 
         formattedTime = hour + ':' + min + ':' + sec;
 

@@ -2,7 +2,7 @@
  *
  * Welcome to the chat server :)
  *
- * The chatserver uses socket.io to handle communication, which is pretty
+ * The ChatServer uses socket.io to handle communication, which is pretty
  * awesome to start with.
  *
  * # The following events are supported:
@@ -66,23 +66,24 @@
  */
 
 // var io = require('socket.io').listen(8080), //Tenim el app server escoltant al 8080
-var io = require('socket.io').listen(1337),
-    // Canvi per a AWS
-    crypto = require('crypto'),
-    // Canvio el codi per utilitzar el connect que és més senzill que el express
-    // express = require('express'),
-    // http = require('http'),
-    // path = require('path'),
-    // fs = require('fs'),
-    users = [];
+var io = require('socket.io').listen(1337);
+// Canvi per a AWS
+var crypto = require('crypto');
+// Canvio el codi per utilitzar el connect que és més senzill que el express
+// express = require('express'),
+// http = require('http'),
+// path = require('path'),
+// fs = require('fs'),
+var users = [];
 
-// var util = require('util'),
-//     // Eliminat per a AWS
-//     connect = require('connect'),
-//     port = 8080; // Tenim el web server escoltant al 1337
-// connect.createServer(connect.static(__dirname)).listen(port);
-// util.puts('Listening on ' + port + '...');
-// util.puts('Press Ctrl + C to stop.');
+// Servidor http per la plana inicial (i única)
+//var util = require('util');
+//var connect = require('connect');
+//var port = 8080; // Tenim el web server escoltant al 1337
+//
+//connect.createServer(connect.static(__dirname)).listen(port);
+//util.puts('Listening on ' + port + '...');
+//util.puts('Press Ctrl + C to stop.');
 
 // var app = express();
 // // all environments
@@ -125,7 +126,7 @@ var io = require('socket.io').listen(1337),
 //   console.log('Express server listening on port ' + app.get('port'));
 // });
 
-function User() {
+function User () {
     this.id = ++User.lastId;
 }
 
@@ -134,9 +135,9 @@ User.prototype.email = null;
 User.prototype.nickName = null;
 User.prototype.lat = null;
 User.prototype.lng = null;
-User.prototype.serialize = function() {
+User.prototype.serialize = function () {
     return {
-        id: this.id,
+        id:       this.id,
         nickName: this.nickName,
         gravatar: "http://www.gravatar.com/avatar/" + crypto.createHash('md5').update(this.email).digest('hex')
 
@@ -147,13 +148,12 @@ User.lastId = 0;
 var R = 6371; // Km
 // Formula correcta però no molt precisa
 
-function distancia(user1, user2) {
+function distancia (user1, user2) {
     return Math.acos(Math.sin(user1.lat) * Math.sin(user2.lat) + Math.cos(user1.lat) * Math.cos(user2.lat) * Math.cos(user2.lng - user1.lng)) * R;
-};
-
+}
 ///////////////////////////////
 
-function dosCerca() {
+function dosCerca () {
     // console.log("comprobando cercania");
     if (users && users[0] && users[1]) {
         for (var i = 0; i <= users.length - 1; i++) {
@@ -166,15 +166,14 @@ function dosCerca() {
         }
         return false;
     }
-};
-
-
+    return false;
+}
 //////////////////////////////
 var interval;
 
-function vigilar(chatRoom, socket) {
+function vigilar (chatRoom, socket) {
     console.log("Setting interval. For socket = " + socket.id);
-    interval = setInterval(function() {
+    interval = setInterval(function () {
         console.log("checking proximity. For socket = " + socket.id);
         if (dosCerca()) {
             console.log("dos cerca. For socket = " + socket.id);
@@ -184,18 +183,18 @@ function vigilar(chatRoom, socket) {
             interval = undefined;
         }
     }, 1000);
-};
+}
 
-function grep(elems, callback, inv) {
+function grep (elems, callback, inv) {
     var retVal, ret = [],
         i = 0,
         length = elems.length;
-    inv = !! inv;
+    inv = !!inv;
 
     // Go through the array, only saving the items
     // that pass the validator function
     for (; i < length; i++) {
-        retVal = !! callback(elems[i], i);
+        retVal = !!callback(elems[i], i);
         if (inv !== retVal) {
             ret.push(elems[i]);
         }
@@ -205,10 +204,11 @@ function grep(elems, callback, inv) {
 }
 
 // io.sockets.on('connection', function(socket) {
-var chatRoom = io.of('/chat').on('connection', function(socket) {
+var chatRoom;
+chatRoom = io.of('/chat').on('connection', function (socket) {
     console.log("Connection stablished. For socket = " + socket.id);
 
-    // TODO: acabar-ho bé. Ara se'n crea un per cada login i per tant envia 
+    // TODO: acabar-ho bé. Ara se'n crea un per cada login i per tant envia
     // dos missatges pel socket. Però sinó, un dels dos no reb el missatge
     if (!interval) {
         vigilar(chatRoom, socket);
@@ -217,7 +217,7 @@ var chatRoom = io.of('/chat').on('connection', function(socket) {
     var user = new User();
     socket.set('user', user);
 
-    socket.on('nick', function(info) {
+    socket.on('nick', function (info) {
 
         if (!info.email || !info.nickName) {
             socket.emit('error', {
@@ -235,23 +235,23 @@ var chatRoom = io.of('/chat').on('connection', function(socket) {
         chatRoom.emit('join', user.serialize()); // envia als usuaris connectats les dades del nou connectat
         socket.emit('userList', users.map(
 
-        function(user) {
-            return user.serialize();
-        }));
+            function (user) {
+                return user.serialize();
+            }));
 
     });
 
-    socket.on('disconnect', function() {
+    socket.on('disconnect', function () {
 
         console.log("Initial users: " + JSON.stringify(users, null, 4) + " For socket = " + socket.id);
         console.log("User num " + users.indexOf(user) + " disconnecting." + " For socket = " + socket.id);
         users.splice(
-        users.indexOf(user), 1); // Elimina l'usu de la llista d'usus connectats
+            users.indexOf(user), 1); // Elimina l'usu de la llista d'usus connectats
         console.log("Final users: " + JSON.stringify(users, null, 4) + " For socket = " + socket.id);
         chatRoom.emit('part', user.serialize()); // envia als usus que queden connectats les dades del que se'n va
     });
 
-    socket.on('sendMessage', function(message) {
+    socket.on('sendMessage', function (message) {
 
         var payload = user.serialize();
         payload.message = message;
@@ -265,7 +265,7 @@ var chatRoom = io.of('/chat').on('connection', function(socket) {
 
     });
 
-    socket.on('positionChange', function(info) {
+    socket.on('positionChange', function (info) {
         console.log('Datos recividos: ' + info.nickName + ', ' + info.lat + ', ' + info.lng);
         console.log("Initial users: " + JSON.stringify(users, null, 4));
 
@@ -278,7 +278,7 @@ var chatRoom = io.of('/chat').on('connection', function(socket) {
 
         console.log("Initial info: " + JSON.stringify(info, null, 4));
         console.log("Initial nickName: " + info.nickName);
-        movingUser = grep(users, function(e, i) {
+        var movingUser = grep(users, function (e) {
             return e.nickName == info.nickName;
         }, false);
 

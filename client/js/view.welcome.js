@@ -2,7 +2,7 @@
  * The Welcome view is responsible for the login screen.
  *
  * The welcome view waits for the login form to be submitted, and after this is
- * done it should trigger a 'submit' event. 
+ * done it should trigger a 'submit' event.
  *
  * The submit event should get an object passed, containing two properties:
  *    nickName
@@ -16,7 +16,7 @@ ChatApp.View.Welcome = Backbone.View.extend({
 
     },
 
-    submit: function(ev) {
+    submit: function (ev) {
 
         // Making sure the browser doesn't submit the form
         ev.preventDefault();
@@ -32,9 +32,9 @@ ChatApp.View.Welcome = Backbone.View.extend({
         // Triggering the 'submit' event
         this.trigger('submit', {
             nickName: nickName,
-            email: email,
-            lat: lat,
-            lng: lng
+            email:    email,
+            lat:      lat,
+            lng:      lng
         });
 
         // Hiding the welcome screen
@@ -47,12 +47,12 @@ ChatApp.View.Welcome = Backbone.View.extend({
 
     },
 
-    controlarMovimiento: function (){
+    controlarMovimiento: function () {
         self = this;
-        function vigila(self) {
+        function vigila (self) {
             // console.log('Miramos posición actual');
             doGeolocation();
-            
+
             var nickName = this.$('input[name=nickName]').val();
             var lat = this.$('input[name=lat]').val();
             var lng = this.$('input[name=lng]').val();
@@ -60,12 +60,15 @@ ChatApp.View.Welcome = Backbone.View.extend({
             // console.log('La pos actual para '+nickName+' es:('+lat+', '+lng+')');
             self.trigger('positionChange', {
                 nickName: nickName,
-                lat: lat,
-                lng: lng
+                lat:      lat,
+                lng:      lng
             });
             // ChatApp.Connection.positionChange(document.getElementById('nickName').value, document.getElementById('lat').value, document.getElementById('lng').value);
         }
-        setInterval( function () { vigila(self); }, 1000);
+
+        setInterval(function () {
+            vigila(self);
+        }, 1000);
     }
 
 

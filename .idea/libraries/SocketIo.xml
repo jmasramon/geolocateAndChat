@@ -1,0 +1,60 @@
+<component name="libraryTable">
+  <library name="SocketIo" type="javaScript">
+    <properties>
+      <option name="frameworkName" value="Node.js Core Modules" />
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/node_modules/socket.io/lib/transports/flashsocket.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/socket.io/lib/transports/index.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/socket.io/lib/transports/http-polling.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/socket.io/lib/transports/http.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/socket.io/lib/transports/jsonp-polling.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/socket.io/lib/transports/websocket.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/socket.io/lib/transports/htmlfile.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/socket.io/lib/transports/xhr-polling.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/socket.io/lib/static.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/socket.io/lib/transport.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/socket.io/lib/transports/websocket/hybi-16.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/socket.io/lib/parser.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/socket.io/lib/transports/websocket/index.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/socket.io/lib/transports/websocket/hybi-07-12.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/socket.io/lib/logger.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/socket.io/lib/transports/websocket/default.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/socket.io/lib/namespace.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/socket.io/lib/stores/redis.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/socket.io/lib/stores/memory.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/socket.io/lib/socket.io.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/socket.io/lib/store.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/socket.io/lib/socket.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/socket.io/lib/manager.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/socket.io/lib/util.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/node_modules/socket.io/lib/transports/flashsocket.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/socket.io/lib/transports/index.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/socket.io/lib/transports/http-polling.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/socket.io/lib/transports/http.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/socket.io/lib/transports/jsonp-polling.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/socket.io/lib/transports/websocket.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/socket.io/lib/transports/htmlfile.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/socket.io/lib/static.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/socket.io/lib/transports/xhr-polling.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/socket.io/lib/transports/websocket/hybi-16.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/socket.io/lib/transport.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/socket.io/lib/transports/websocket/index.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/socket.io/lib/parser.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/socket.io/lib/transports/websocket/hybi-07-12.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/socket.io/lib/transports/websocket/default.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/socket.io/lib/logger.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/socket.io/lib/namespace.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/socket.io/lib/stores/redis.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/socket.io/lib/stores/memory.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/socket.io/lib/socket.io.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/socket.io/lib/store.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/socket.io/lib/socket.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/socket.io/lib/manager.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/socket.io/lib/util.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>

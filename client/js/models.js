@@ -41,4 +41,5 @@ ChatApp.Model.MessageList = Backbone.Collection.extend({
 
     model: ChatApp.Model.Message
 
-});/* Add your models here. Good luck! */
+});
+/* Add your models here. Good luck! */

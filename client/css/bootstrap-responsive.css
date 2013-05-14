@@ -122,7 +122,7 @@
     }
 
     .row:before,
-  .row:after {
+    .row:after {
         display: table;
         line-height: 0;
         content: "";
@@ -131,16 +131,17 @@
     .row:after {
         clear: both;
     }
-  [    class*="span"] {
+
+    [    class*="span"] {
         float: left;
         min-height: 1px;
         margin-left: 30px;
     }
 
     .container,
-  .navbar-static-top .container,
-  .navbar-fixed-top .container,
-  .navbar-fixed-bottom .container {
+    .navbar-static-top .container,
+    .navbar-fixed-top .container,
+    .navbar-fixed-bottom .container {
         width: 1170px;
     }
 
@@ -246,7 +247,7 @@
     }
 
     .row-fluid:before,
-  .row-fluid:after {
+    .row-fluid:after {
         display: table;
         line-height: 0;
         content: "";
@@ -457,8 +458,8 @@
     }
 
     input,
-  textarea,
-  .uneditable-input {
+    textarea,
+    .uneditable-input {
         margin-left: 0;
     }
 
@@ -467,74 +468,74 @@
     }
 
     input.span12,
-  textarea.span12,
-  .uneditable-input.span12 {
+    textarea.span12,
+    .uneditable-input.span12 {
         width: 1156px;
     }
 
     input.span11,
-  textarea.span11,
-  .uneditable-input.span11 {
+    textarea.span11,
+    .uneditable-input.span11 {
         width: 1056px;
     }
 
     input.span10,
-  textarea.span10,
-  .uneditable-input.span10 {
+    textarea.span10,
+    .uneditable-input.span10 {
         width: 956px;
     }
 
     input.span9,
-  textarea.span9,
-  .uneditable-input.span9 {
+    textarea.span9,
+    .uneditable-input.span9 {
         width: 856px;
     }
 
     input.span8,
-  textarea.span8,
-  .uneditable-input.span8 {
+    textarea.span8,
+    .uneditable-input.span8 {
         width: 756px;
     }
 
     input.span7,
-  textarea.span7,
-  .uneditable-input.span7 {
+    textarea.span7,
+    .uneditable-input.span7 {
         width: 656px;
     }
 
     input.span6,
-  textarea.span6,
-  .uneditable-input.span6 {
+    textarea.span6,
+    .uneditable-input.span6 {
         width: 556px;
     }
 
     input.span5,
-  textarea.span5,
-  .uneditable-input.span5 {
+    textarea.span5,
+    .uneditable-input.span5 {
         width: 456px;
     }
 
     input.span4,
-  textarea.span4,
-  .uneditable-input.span4 {
+    textarea.span4,
+    .uneditable-input.span4 {
         width: 356px;
     }
 
     input.span3,
-  textarea.span3,
-  .uneditable-input.span3 {
+    textarea.span3,
+    .uneditable-input.span3 {
         width: 256px;
     }
 
     input.span2,
-  textarea.span2,
-  .uneditable-input.span2 {
+    textarea.span2,
+    .uneditable-input.span2 {
         width: 156px;
     }
 
     input.span1,
-  textarea.span1,
-  .uneditable-input.span1 {
+    textarea.span1,
+    .uneditable-input.span1 {
         width: 56px;
     }
 
@@ -558,7 +559,7 @@
     }
 
     .row:before,
-  .row:after {
+    .row:after {
         display: table;
         line-height: 0;
         content: "";
@@ -567,16 +568,17 @@
     .row:after {
         clear: both;
     }
-  [    class*="span"] {
+
+    [    class*="span"] {
         float: left;
         min-height: 1px;
         margin-left: 20px;
     }
 
     .container,
-  .navbar-static-top .container,
-  .navbar-fixed-top .container,
-  .navbar-fixed-bottom .container {
+    .navbar-static-top .container,
+    .navbar-fixed-top .container,
+    .navbar-fixed-bottom .container {
         width: 724px;
     }
 
@@ -682,7 +684,7 @@
     }
 
     .row-fluid:before,
-  .row-fluid:after {
+    .row-fluid:after {
         display: table;
         line-height: 0;
         content: "";
@@ -893,8 +895,8 @@
     }
 
     input,
-  textarea,
-  .uneditable-input {
+    textarea,
+    .uneditable-input {
         margin-left: 0;
     }
 
@@ -903,74 +905,74 @@
     }
 
     input.span12,
-  textarea.span12,
-  .uneditable-input.span12 {
+    textarea.span12,
+    .uneditable-input.span12 {
         width: 710px;
     }
 
     input.span11,
-  textarea.span11,
-  .uneditable-input.span11 {
+    textarea.span11,
+    .uneditable-input.span11 {
         width: 648px;
     }
 
     input.span10,
-  textarea.span10,
-  .uneditable-input.span10 {
+    textarea.span10,
+    .uneditable-input.span10 {
         width: 586px;
     }
 
     input.span9,
-  textarea.span9,
-  .uneditable-input.span9 {
+    textarea.span9,
+    .uneditable-input.span9 {
         width: 524px;
     }
 
     input.span8,
-  textarea.span8,
-  .uneditable-input.span8 {
+    textarea.span8,
+    .uneditable-input.span8 {
         width: 462px;
     }
 
     input.span7,
-  textarea.span7,
-  .uneditable-input.span7 {
+    textarea.span7,
+    .uneditable-input.span7 {
         width: 400px;
     }
 
     input.span6,
-  textarea.span6,
-  .uneditable-input.span6 {
+    textarea.span6,
+    .uneditable-input.span6 {
         width: 338px;
     }
 
     input.span5,
-  textarea.span5,
-  .uneditable-input.span5 {
+    textarea.span5,
+    .uneditable-input.span5 {
         width: 276px;
     }
 
     input.span4,
-  textarea.span4,
-  .uneditable-input.span4 {
+    textarea.span4,
+    .uneditable-input.span4 {
         width: 214px;
     }
 
     input.span3,
-  textarea.span3,
-  .uneditable-input.span3 {
+    textarea.span3,
+    .uneditable-input.span3 {
         width: 152px;
     }
 
     input.span2,
-  textarea.span2,
-  .uneditable-input.span2 {
+    textarea.span2,
+    .uneditable-input.span2 {
         width: 90px;
     }
 
     input.span1,
-  textarea.span1,
-  .uneditable-input.span1 {
+    textarea.span1,
+    .uneditable-input.span1 {
         width: 28px;
     }
 }
@@ -982,8 +984,8 @@
     }
 
     .navbar-fixed-top,
-  .navbar-fixed-bottom,
-  .navbar-static-top {
+    .navbar-fixed-bottom,
+    .navbar-static-top {
         margin-right: -20px;
         margin-left: -20px;
     }
@@ -1012,7 +1014,7 @@
     }
 
     .row,
-  .thumbnails {
+    .thumbnails {
         margin-left: 0;
     }
 
@@ -1020,9 +1022,10 @@
         float: none;
         margin-left: 0;
     }
-  [    class*="span"],
-  .uneditable-input[class*="span"],
-  .row-fluid [class*="span"] {
+
+    [    class*="span"],
+    .uneditable-input[class*="span"],
+    .row-fluid [class*="span"] {
         display: block;
         float: none;
         width: 100%;
@@ -1033,7 +1036,7 @@
     }
 
     .span12,
-  .row-fluid .span12 {
+    .row-fluid .span12 {
         width: 100%;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
@@ -1045,12 +1048,12 @@
     }
 
     .input-large,
-  .input-xlarge,
-  .input-xxlarge,
-  input[class*="span"],
-  select[class*="span"],
-  textarea[class*="span"],
-  .uneditable-input {
+    .input-xlarge,
+    .input-xxlarge,
+    input[class*="span"],
+    select[class*="span"],
+    textarea[class*="span"],
+    .uneditable-input {
         display: block;
         width: 100%;
         min-height: 30px;
@@ -1060,9 +1063,9 @@
     }
 
     .input-prepend input,
-  .input-append input,
-  .input-prepend input[class*="span"],
-  .input-append input[class*="span"] {
+    .input-append input,
+    .input-prepend input[class*="span"],
+    .input-append input[class*="span"] {
         display: inline-block;
         width: auto;
     }
@@ -1100,7 +1103,7 @@
     }
 
     input[type="checkbox"],
-  input[type="radio"] {
+    input[type="radio"] {
         border: 1px solid #ccc;
     }
 
@@ -1125,7 +1128,7 @@
     }
 
     .media .pull-left,
-  .media .pull-right {
+    .media .pull-right {
         display: block;
         float: none;
         margin-bottom: 10px;
@@ -1158,7 +1161,7 @@
     }
 
     .navbar-fixed-top,
-  .navbar-fixed-bottom {
+    .navbar-fixed-bottom {
         position: static;
     }
 
@@ -1171,7 +1174,7 @@
     }
 
     .navbar-fixed-top .navbar-inner,
-  .navbar-fixed-bottom .navbar-inner {
+    .navbar-fixed-bottom .navbar-inner {
         padding: 5px;
     }
 
@@ -1213,7 +1216,7 @@
     }
 
     .nav-collapse .nav > li > a,
-  .nav-collapse .dropdown-menu a {
+    .nav-collapse .dropdown-menu a {
         padding: 9px 15px;
         font-weight: bold;
         color: #777777;
@@ -1235,21 +1238,21 @@
     }
 
     .nav-collapse .nav > li > a:hover,
-  .nav-collapse .nav > li > a:focus,
-  .nav-collapse .dropdown-menu a:hover,
-  .nav-collapse .dropdown-menu a:focus {
+    .nav-collapse .nav > li > a:focus,
+    .nav-collapse .dropdown-menu a:hover,
+    .nav-collapse .dropdown-menu a:focus {
         background-color: #f2f2f2;
     }
 
     .navbar-inverse .nav-collapse .nav > li > a,
-  .navbar-inverse .nav-collapse .dropdown-menu a {
+    .navbar-inverse .nav-collapse .dropdown-menu a {
         color: #999999;
     }
 
     .navbar-inverse .nav-collapse .nav > li > a:hover,
-  .navbar-inverse .nav-collapse .nav > li > a:focus,
-  .navbar-inverse .nav-collapse .dropdown-menu a:hover,
-  .navbar-inverse .nav-collapse .dropdown-menu a:focus {
+    .navbar-inverse .nav-collapse .nav > li > a:focus,
+    .navbar-inverse .nav-collapse .dropdown-menu a:hover,
+    .navbar-inverse .nav-collapse .dropdown-menu a:focus {
         background-color: #111111;
     }
 
@@ -1282,7 +1285,7 @@
     }
 
     .nav-collapse .dropdown-menu:before,
-  .nav-collapse .dropdown-menu:after {
+    .nav-collapse .dropdown-menu:after {
         display: none;
     }
 
@@ -1291,12 +1294,12 @@
     }
 
     .nav-collapse .nav > li > .dropdown-menu:before,
-  .nav-collapse .nav > li > .dropdown-menu:after {
+    .nav-collapse .nav > li > .dropdown-menu:after {
         display: none;
     }
 
     .nav-collapse .navbar-form,
-  .nav-collapse .navbar-search {
+    .nav-collapse .navbar-search {
         float: none;
         padding: 10px 15px;
         margin: 10px 0;
@@ -1308,7 +1311,7 @@
     }
 
     .navbar-inverse .nav-collapse .navbar-form,
-  .navbar-inverse .nav-collapse .navbar-search {
+    .navbar-inverse .nav-collapse .navbar-search {
         border-top-color: #111111;
         border-bottom-color: #111111;
     }
@@ -1319,7 +1322,7 @@
     }
 
     .nav-collapse,
-  .nav-collapse.collapse {
+    .nav-collapse.collapse {
         height: 0;
         overflow: hidden;
     }
@@ -1385,7 +1388,7 @@ ul.no-padding {
     color: #FFFFFF;
     font-weight: bold;
     background-color: #C73;
-/*This is for the gravatar background*/
+    /*This is for the gravatar background*/
     background-repeat: no-repeat;
     border-radius: 10px;
     box-shadow: 3px 3px 5px #222;
@@ -1410,7 +1413,7 @@ ul.no-padding {
     padding: 4px 20px 5px 65px;
     margin: 1px;
     background: #EEE;
-/*This is for the gravatar background*/
+    /*This is for the gravatar background*/
     background-repeat: no-repeat;
     border-radius: 15px;
     box-shadow: 3px 3px 5px #CCC;
@@ -1473,41 +1476,42 @@ input#lat, #lng {
     border: 0px hidden transparent;
     margin-left: 8px;
     border-bottom: 0px solid #000000;
-  /*+placement:shift -2px 2px;*/
+    /*+placement:shift -2px 2px;*/
     position: relative;
     left: -2px;
     top: 2px;
 }
 
 .inputArea BUTTON {
-  display: none;
+    display: none;
 
-/*    display: block;
-    position: fixed;
-    right: 200px;
-    bottom: 0;
-    float: right;
-    border: 0;
-    background: #AACCAA;
-    color: white;
-    font-size: 110%;
-    font-weight: bold;
-    height: 25px;
-    width: 100px;
-*/}
+    /*    display: block;
+        position: fixed;
+        right: 200px;
+        bottom: 0;
+        float: right;
+        border: 0;
+        background: #AACCAA;
+        color: white;
+        font-size: 110%;
+        font-weight: bold;
+        height: 25px;
+        width: 100px;
+    */
+}
 
 .rectangle-speech-border {
-/*    
-    position: relative;
-    padding: 50px 15px;
-    margin: 1em 0 3em;
-*/
+    /*
+        position: relative;
+        padding: 50px 15px;
+        margin: 1em 0 3em;
+    */
     border: 5px solid #5a8f00;
     /*text-align: center;*/
-/*  
-    color: #333;
-    background: #fff;
-*/
+    /*
+        color: #333;
+        background: #fff;
+    */
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
@@ -1554,7 +1558,6 @@ input#lat, #lng {
     margin-right: 70px;
     border: 5px solid lightblue;
 }
-
 
 .triangle-border {
     position: relative;

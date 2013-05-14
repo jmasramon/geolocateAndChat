@@ -1,0 +1,966 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_TEST_SOURCES" value="false" />
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9f04b534-553e-4b53-b831-5765be2cf97e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Connect.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Growl.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SocketIo.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Vendor.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/jmasramon.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChatServer-ck.js" afterPath="$PROJECT_DIR$/ChatServer-ck.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChatServer.js" afterPath="$PROJECT_DIR$/ChatServer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/application.js" afterPath="$PROJECT_DIR$/client/js/application.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/vendor/backbone.js" afterPath="$PROJECT_DIR$/client/js/vendor/backbone.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/css/bootstrap-responsive.css" afterPath="$PROJECT_DIR$/client/css/bootstrap-responsive.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/css/bootstrap-responsive.min.css" afterPath="$PROJECT_DIR$/client/css/bootstrap-responsive.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/css/bootstrap.css" afterPath="$PROJECT_DIR$/client/css/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/bootstrap.js" afterPath="$PROJECT_DIR$/client/js/bootstrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/client/css/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/client/js/bootstrap.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/chatapp.js" afterPath="$PROJECT_DIR$/client/js/chatapp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codekit-config.json" afterPath="$PROJECT_DIR$/codekit-config.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/connection.js" afterPath="$PROJECT_DIR$/client/js/connection.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/geometa.js" afterPath="$PROJECT_DIR$/client/js/geometa.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/index.html" afterPath="$PROJECT_DIR$/client/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/vendor/jquery.min.js" afterPath="$PROJECT_DIR$/client/js/vendor/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/vendor/less.min.js" afterPath="$PROJECT_DIR$/client/js/vendor/less.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/links.html" afterPath="$PROJECT_DIR$/client/links.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/models.js" afterPath="$PROJECT_DIR$/client/js/models.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proves grep.js" afterPath="$PROJECT_DIR$/proves grep.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/vendor/socket.io.js" afterPath="$PROJECT_DIR$/client/js/vendor/socket.io.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/style.css" afterPath="$PROJECT_DIR$/client/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/style.less" afterPath="$PROJECT_DIR$/client/style.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/vendor/underscore.js" afterPath="$PROJECT_DIR$/client/js/vendor/underscore.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/view.esperando.js" afterPath="$PROJECT_DIR$/client/js/view.esperando.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/view.inputarea.js" afterPath="$PROJECT_DIR$/client/js/view.inputarea.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/view.messagelist.js" afterPath="$PROJECT_DIR$/client/js/view.messagelist.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/view.userlist.js" afterPath="$PROJECT_DIR$/client/js/view.userlist.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/view.welcome.js" afterPath="$PROJECT_DIR$/client/js/view.welcome.js" />
+    </list>
+    <ignored path="nodejs-chat2.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <file path="/Dummy.txt" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368523175711" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/package.json" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073138" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/test.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073138" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/diff_multi_bench_output.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073138" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/test.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073138" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/lib/queue.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073138" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/node_modules/zeparser/Tokenizer.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073139" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/node_modules/zeparser/test-parser.html" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073139" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/lib/to_array.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073139" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/node_modules/zeparser/ZeParser.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073139" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/lib/parser/javascript.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073139" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/node_modules/zeparser/unicodecategories.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073139" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/lib/parser/hiredis.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073139" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/node_modules/zeparser/test-tokenizer.html" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073139" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/benches/re_sub_test.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073139" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/node_modules/zeparser/package.json" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073139" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/benches/hiredis_parser.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073139" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/benches/buffer_bench.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073139" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/node_modules/zeparser/tests.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073139" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/benches/stress/codec.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073140" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/benches/stress/speed/speed.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073140" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/benches/stress/pubsub/pub.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073140" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/benches/stress/pubsub/server.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073140" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/benches/stress/rpushblpop/pub.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073140" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/benches/stress/rpushblpop/server.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073140" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/examples/subquery.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073140" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/examples/backpressure_drain.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073140" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/examples/auth.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073140" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/examples/web_server.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073140" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/examples/file.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073140" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/examples/monitor.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073140" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/examples/multi2.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073140" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/examples/psubscribe.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073141" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/examples/multi.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073141" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/examples/unix_socket.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073141" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/base64id/package.json" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073141" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/base64id/lib/base64id.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073141" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/policyfile/package.json" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073141" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/policyfile/lib/server.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073141" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/policyfile/tests/unit.test.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073141" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/policyfile/examples/basic.fallback.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073141" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/policyfile/examples/basic.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073141" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/package.json" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073141" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/bin/builder.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073141" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/socket.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073141" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/events.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073142" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/json.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073142" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/io.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073142" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/util.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073142" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/transport.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073142" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/parser.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073142" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/namespace.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073142" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/swfobject.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073142" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/sample.html" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073142" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/web_socket.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073142" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/WebSocketEvent.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073142" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/WebSocketMainInsecure.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073143" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/WebSocket.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073143" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/WebSocketMain.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073143" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/IWebSocketLogger.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073144" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/adobe/net/proxies/RFC2817Socket.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073144" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/gsolo/encryption/MD5.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073144" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/math/ClassicReduction.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073145" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/math/BarrettReduction.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073145" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/math/IReduction.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073145" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/math/MontgomeryReduction.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073146" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/math/NullReduction.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073146" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/math/BigInteger.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073147" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/math/bi_internal.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073147" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/Hex.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073147" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/Memory.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073147" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/ArrayUtil.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073147" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/Base64.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073147" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/ObjectIdentifier.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073148" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/Sequence.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073148" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/PrintableString.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073148" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/OID.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073148" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/UTCTime.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073148" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/DER.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073148" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/Set.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073148" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/PEM.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073149" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/Type.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073149" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/ByteString.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073149" ignored="false" />
+    <file path="$PROJECT_DIR$/client/js/vendor/jasmine-html.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073149" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/IAsn1Type.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073149" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/Integer.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073149" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/Crypto.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073149" ignored="false" />
+    <file path="$PROJECT_DIR$/client/js/vendor/jasmine.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073150" ignored="false" />
+    <file path="$PROJECT_DIR$/client/css/jasmine.css" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073150" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/SSLEvent.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073150" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/MACs.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073150" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSEvent.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073150" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSTest.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073150" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSError.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073151" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSConnectionState.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073151" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/SSLConnectionState.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073151" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSSocket.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073151" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/BulkCiphers.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073151" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/CipherSuites.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073151" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSSecurityParameters.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073151" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSConfig.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073151" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSSocketEvent.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073152" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/ISecurityParameters.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073152" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/IConnectionState.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073152" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/cert/X509CertificateCollection.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073152" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/cert/MozillaRootCertificates.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073152" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/cert/X509Certificate.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073152" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/IHMAC.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073152" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/SHA256.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073152" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/MD5.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073152" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/MAC.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073152" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/SHA1.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073152" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/MD2.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073152" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/SHA224.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073153" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/HMAC.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073153" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/SHABase.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073153" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/IHash.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073153" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/prng/TLSPRF.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073153" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/prng/Random.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073153" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/prng/ARC4.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073153" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/prng/IPRNG.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073153" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/MD2Test.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073153" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/AESKeyTest.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073153" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/TLSPRFTest.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073154" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/CFBModeTest.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073154" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/MD5Test.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073154" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/CFB8ModeTest.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073154" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/ECBModeTest.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073154" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/ARC4Test.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073154" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/TripleDESKeyTest.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073154" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/DESKeyTest.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073154" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/TestCase.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073154" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/OFBModeTest.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073155" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/CBCModeTest.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073155" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/BlowFishKeyTest.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073155" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/HMACTest.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073155" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/BigIntegerTest.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073155" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/SHA1Test.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073155" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/XTeaKeyTest.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073155" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/ITestHarness.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073155" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/RSAKeyTest.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073155" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/SHA224Test.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073155" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/SHA256Test.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073155" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/CTRModeTest.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073155" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/IStreamCipher.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073155" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/NullPad.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073155" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/SimpleIVMode.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073155" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/TripleDESKey.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073155" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/IVMode.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073155" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/ISymmetricKey.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073156" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/SSLPad.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073156" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/PKCS5.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073156" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/TLSPad.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073156" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/IPad.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073156" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/CBCMode.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073156" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/DESKey.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073156" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/ICipher.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073156" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/IMode.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073156" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/ECBMode.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073156" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/XTeaKey.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073156" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/CFB8Mode.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073156" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/BlowFishKey.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073157" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/OFBMode.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073157" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/CTRMode.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073157" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/CFBMode.as" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073157" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/transports/flashsocket.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073157" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/transports/jsonp-polling.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073157" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/transports/websocket.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073157" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/transports/htmlfile.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073157" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/transports/xhr.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073157" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/transports/xhr-polling.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073157" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/dist/socket.io.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073158" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/dist/socket.io.min.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073158" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/test/socket.test.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073158" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/test/worker.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073158" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/test/util.test.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073158" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/test/events.test.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073158" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/test/parser.test.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073158" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/test/io.test.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073158" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/test/node/builder.test.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073158" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/test/node/builder.common.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073158" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/package.json" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073158" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/lib/Sender.hixie.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073159" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/lib/Validation.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073159" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/lib/browser.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073159" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/lib/WebSocket.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073159" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/lib/Receiver.hixie.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073159" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/lib/BufferUtil.fallback.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073160" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/lib/BufferUtil.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073160" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/lib/Validation.fallback.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073160" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/lib/Receiver.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073160" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/lib/WebSocketServer.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073160" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/lib/BufferPool.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073160" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/lib/Sender.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073160" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/lib/ErrorCodes.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073161" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/WebSocket.integration.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073161" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/Sender.test.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073161" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/Receiver.hixie.test.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073161" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/Sender.hixie.test.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073161" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/BufferPool.test.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073161" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/autobahn.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073162" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/testserver.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073162" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/WebSocket.test.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073162" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/autobahn-server.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073162" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/Receiver.test.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073162" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/WebSocketServer.test.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073162" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/hybi-common.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073162" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/Validation.test.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073162" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/bench/speed.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073162" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/bench/sender.benchmark.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073162" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/bench/parser.benchmark.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073162" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/bench/util.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073163" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/qs/package.json" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073163" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/send/package.json" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073163" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/send/lib/utils.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073163" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/send/lib/send.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073163" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/send/node_modules/mime/test.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073163" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/send/node_modules/mime/package.json" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073163" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/send/node_modules/mime/mime.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073163" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/send/node_modules/range-parser/package.json" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073163" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/examples/fileapi/server.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073163" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/bytes/component.json" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073163" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/examples/fileapi/package.json" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073163" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/bytes/package.json" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073164" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/examples/fileapi/public/uploader.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073164" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/examples/fileapi/public/app.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073164" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/debug/debug.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073164" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/examples/serverstats/server.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073164" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/examples/serverstats/package.json" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073164" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/debug/component.json" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073164" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/debug/package.json" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073164" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/examples/serverstats-express_3/server.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073165" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/examples/serverstats-express_3/package.json" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073165" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/debug/lib/debug.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073165" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/debug/example/browser.html" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073165" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/debug/example/worker.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073165" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/debug/example/wildcards.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073165" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/options/package.json" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073165" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/debug/example/app.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073165" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/options/lib/options.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073165" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/fresh/package.json" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073165" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/options/test/options.test.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073165" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/pause/package.json" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073166" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/commander/package.json" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073166" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/cookie/package.json" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073166" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/commander/lib/commander.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073166" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/cookie/test/parse.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073166" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/tinycolor/tinycolor.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073166" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/cookie/test/serialize.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073166" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/tinycolor/package.json" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073166" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/formidable/package.json" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073167" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/uglify-js.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073167" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/package.json" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073167" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/formidable/lib/file.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073167" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/README.html" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073167" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/docstyle.css" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073167" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/formidable/lib/multipart_parser.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073167" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/formidable/lib/json_parser.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073167" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/lib/squeeze-more.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073167" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/formidable/lib/incoming_form.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073167" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/lib/parse-js.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073167" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/formidable/lib/octet_parser.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073167" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/lib/process.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073168" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/formidable/lib/querystring_parser.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073168" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/lib/object-ast.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073168" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/formidable/test/common.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073168" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/tmp/embed-tokens.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073168" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/tmp/hoist.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073168" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/tmp/goto.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073168" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/tmp/instrument.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073168" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/tmp/uglify-hangs.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073168" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/tmp/instrument2.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073168" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/tmp/goto2.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073169" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/formidable/test/unit/test-file.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073169" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/tmp/test.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073169" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/formidable/test/unit/test-incoming-form.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073169" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/tmp/liftvars.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073169" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/formidable/test/tools/base64.html" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073169" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/tmp/uglify-hangs2.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073169" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/formidable/test/legacy/common.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073169" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/beautify.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073169" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/testparser.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073169" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/formidable/test/legacy/simple/test-multipart-parser.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073169" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/formidable/test/legacy/simple/test-file.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073170" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/scripts.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073170" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/formidable/test/legacy/simple/test-incoming-form.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073170" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/formidable/test/legacy/simple/test-querystring-parser.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073170" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/formidable/test/legacy/system/test-multi-video-upload.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073170" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue17.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073170" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/formidable/test/legacy/integration/test-multipart-parser.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073170" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/ifreturn.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073170" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/formidable/test/fixture/multipart.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073170" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/formidable/test/fixture/js/workarounds.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073170" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/with.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073170" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/formidable/test/fixture/js/no-filename.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073171" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue50.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073171" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/formidable/test/fixture/js/preamble.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073171" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue68.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073171" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/formidable/test/fixture/js/encoding.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073171" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/empty-blocks.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073171" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/forstatement.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073171" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/formidable/test/fixture/js/misc.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073171" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/array4.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073171" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue14.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073172" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/assignment.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073172" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/array3.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073172" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/formidable/test/standalone/test-connection-aborted.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073172" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/formidable/test/standalone/test-issue-46.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073172" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue21.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073172" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/formidable/test/standalone/test-content-transfer-encoding.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073172" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue48.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073172" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/formidable/test/integration/test-octet-stream.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073172" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/array2.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073172" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/formidable/test/integration/test-json.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073173" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/whitespace.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073173" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/formidable/test/integration/test-fixtures.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073173" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue20.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073173" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/formidable/tool/record.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073173" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/formidable/example/upload.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073173" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/formidable/example/json.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073173" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/formidable/example/post.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073173" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/mangle.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073173" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/formidable/benchmark/bench-multipart-parser.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073173" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue29.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073174" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue69.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073174" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/const.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073174" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/buffer-crc32/package.json" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073174" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/ifreturn2.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073174" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue28.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073174" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/buffer-crc32/tests/crc.test.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073174" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/if.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073174" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue10.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073174" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue17.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073174" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/connect/node_modules/cookie-signature/package.json" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073174" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue34.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073174" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/ifreturn.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073175" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue25.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073175" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue278.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073175" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue16.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073175" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/with.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073175" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue50.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073175" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue68.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073175" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/empty-blocks.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073175" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/forstatement.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073175" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/var.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073175" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/array4.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073175" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue14.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073176" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/concatstring.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073176" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/assignment.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073176" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue4.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073176" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/array3.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073176" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue13.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073176" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue54.1.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073176" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue30.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073177" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue21.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073177" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue48.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073177" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/array2.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073177" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/whitespace.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073177" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/array1.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073177" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue11.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073177" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/null_string.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073177" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/mangle.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073178" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue29.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073178" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue69.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073178" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/const.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073178" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/ifreturn2.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073178" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue28.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073178" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue53.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073179" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue27.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073179" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue9.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073179" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/lib/transports/websocket/hybi-16.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073179" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/if.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073179" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/lib/transports/websocket/index.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073179" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue10.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073179" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/lib/transports/websocket/hybi-07-12.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073179" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/strict-equals.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073180" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/lib/transports/websocket/default.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073180" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/benchmarks/runner.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073180" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/package.json" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073180" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/benchmarks/decode.bench.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073180" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/benchmarks/encode.bench.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073180" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/lib/XMLHttpRequest.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073180" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/tests/test-request-protocols.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073180" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/tests/test-events.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073180" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/tests/test-exceptions.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073180" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/package.json" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073181" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/tests/test-request-methods.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073181" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/tests/test-headers.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073181" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/generate_commands.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073181" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/tests/test-constants.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073181" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/multi_bench.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073181" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/example/demo.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073181" ignored="false" />
+    <file path="/a.coffee" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368441743038" ignored="false" />
+    <file path="/a.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438169923" ignored="false" />
+    <file path="/ChatServer.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368467985718" ignored="false" />
+    <file path="/a.dummy" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368475289649" ignored="false" />
+    <file path="/view.esperando.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368523975208" ignored="false" />
+    <file path="/index.html" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368523854507" ignored="false" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="nodejs-chat2" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="view.esperando.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/js/view.esperando.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="28" selection-start="488" selection-end="488" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#663#1238#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChatServer.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ChatServer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="86" column="0" selection-start="1646" selection-end="1924" vertical-scroll-proportion="0.5479452">
+              <folding>
+                <element signature="e#0#1210#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="84" column="12" selection-start="3905" selection-end="3905" vertical-scroll-proportion="-15.0">
+              <folding>
+                <element signature="tag#head#0" expanded="true" />
+                <element signature="tag#embed#0;tag#body#0" expanded="true" />
+                <element signature="tag#section#0;tag#embed#0;tag#body#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/client/index.html" />
+        <option value="$PROJECT_DIR$/client/js/view.esperando.js" />
+        <option value="$PROJECT_DIR$/ChatServer.js" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="827" />
+    <option name="y" value="146" />
+    <option name="width" value="907" />
+    <option name="height" value="816" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>CoffeeScript</id>
+          </State>
+          <State>
+            <id>GeneralCoffeeScript</id>
+          </State>
+          <State>
+            <id>Probable bugsCoffeeScript</id>
+          </State>
+          <State>
+            <id>Spelling</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>CoffeeScriptSillyAssignment</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents ProjectPane="true" />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nodejs-chat2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nodejs-chat2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nodejs-chat2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nodejs-chat2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nodejs-chat2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nodejs-chat2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nodejs-chat2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nodejs-chat2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nodejs-chat2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nodejs-chat2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nodejs-chat2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nodejs-chat2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nodejs-chat2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="Errors" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/node_modules/growl/lib" />
+    <property name="FullScreen" value="false" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+  </component>
+  <component name="RunManager" selected="JsTestDriver.greeterTest.js">
+    <configuration default="false" name="greeterTest.js" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver" temporary="true">
+      <setting name="configLocationType" value="JS_FILE" />
+      <setting name="configType" value="FILE_PATH" />
+      <setting name="settingsFile" value="$PROJECT_DIR$/jsTestDriver.conf" />
+      <setting name="jsFile" value="$PROJECT_DIR$/test/greeterTest.js" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="CHROME" />
+      <RunnerSettings RunnerId="JsTestDriverClientRunner" />
+      <ConfigurationWrapper RunnerId="JsTestDriverClientRunner" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="CHROME" />
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="$PROJECT_DIR$">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="JsTestDriver.greeterTest.js" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JsTestDriver.greeterTest.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9f04b534-553e-4b53-b831-5765be2cf97e" name="Default" comment="" />
+      <created>1368438022517</created>
+      <updated>1368438022517</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="827" y="146" width="907" height="816" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917467" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917467" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15271494" sideWeight="0.60076773" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24886878" sideWeight="0.67082536" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978156" sideWeight="0.67082536" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917467" sideWeight="0.49973363" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="JsTestDriver Server" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917467" sideWeight="0.49653703" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917467" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917467" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39923224" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORISONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="LIMIT_HISTORY" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
+    <option name="UPDATE_FILTER_SCOPE_NAME" />
+    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
+    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
+    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/test/greeterTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="0" selection-start="1070" selection-end="1070" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="4" selection-start="1079" selection-end="1079" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="133" column="4" selection-start="1822" selection-end="1822" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/css/bootstrap-responsive.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1531" column="4" selection-start="28415" selection-end="28415" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/grepTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/connect/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/connect/lib/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="6" selection-start="28" selection-end="29" vertical-scroll-proportion="0.026223777" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/connect/lib/connect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="40" selection-start="592" selection-end="592" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/connect/lib/middleware/static.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="19" selection-start="17" selection-end="23" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/socket.io/lib/util.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="32" selection-start="380" selection-end="380" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/js/vendor/socket.io.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/js/models.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#136#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/js/geometa.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="12" selection-start="3905" selection-end="3905" vertical-scroll-proportion="-15.0">
+          <folding>
+            <element signature="tag#head#0" expanded="true" />
+            <element signature="tag#embed#0;tag#body#0" expanded="true" />
+            <element signature="tag#section#0;tag#embed#0;tag#body#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/js/view.esperando.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="28" selection-start="488" selection-end="488" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#663#1238#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChatServer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="0" selection-start="1646" selection-end="1924" vertical-scroll-proportion="0.5479452">
+          <folding>
+            <element signature="e#0#1210#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+

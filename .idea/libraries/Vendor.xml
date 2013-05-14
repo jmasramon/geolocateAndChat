@@ -1,0 +1,25 @@
+<component name="libraryTable">
+  <library name="Vendor" type="javaScript">
+    <properties>
+      <option name="frameworkName" value="Node.js Core Modules" />
+      <option name="frameworkVersion" value="v" />
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/client/js/vendor/underscore.js" />
+        <item url="file://$PROJECT_DIR$/client/js/vendor/backbone.js" />
+        <item url="file://$PROJECT_DIR$/client/js/vendor/jasmine.js" />
+        <item url="file://$PROJECT_DIR$/client/js/vendor/jasmine-html.js" />
+        <item url="file://$PROJECT_DIR$/client/js/vendor/socket.io.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/client/js/vendor/underscore.js" />
+      <root url="file://$PROJECT_DIR$/client/js/vendor/less.min.js" />
+      <root url="file://$PROJECT_DIR$/client/js/vendor/jquery.min.js" />
+      <root url="file://$PROJECT_DIR$/client/js/vendor/backbone.js" />
+      <root url="file://$PROJECT_DIR$/client/js/vendor/jasmine.js" />
+      <root url="file://$PROJECT_DIR$/client/js/vendor/jasmine-html.js" />
+      <root url="file://$PROJECT_DIR$/client/js/vendor/socket.io.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>
