@@ -1,18 +1,17 @@
 ChatApp.View.Esperando = Backbone.View.extend({
-    self: null,
 
     initialize: function () {
-        this.self = this;
+//        self = this;
         ChatApp.vent.on('dejarEsperar', this.dejarEsperar);
         ChatApp.vent.on('mostrarEsperando', this.mostrarEsperando);
         this.el = $('section.esperando');
         ChatApp.View.Esperando.evalSound = function () {
             console.log('Entrant a evalSound')
-            var thisSound;
-            thisSound = document.getElementById('sound1');
-            console.log('evalSound: element agafat ' + thisSound.id);
-            console.log('evalSound: cridem a play()');
-            thisSound.Play();
+//            var thisSound;
+//            thisSound = document.getElementById('sound1');
+//            console.log('evalSound: element agafat ' + thisSound.id);
+//            console.log('evalSound: cridem a play()');
+//            thisSound.Play();
 
             if('webkitAudioContext' in window) {
                 var myAudioContext = new webkitAudioContext();
@@ -22,10 +21,12 @@ ChatApp.View.Esperando = Backbone.View.extend({
 
             var source = myAudioContext.createOscillator();
             source.type = 0; // sine wave
+            source.frequency.value = 200;
 
             var compressor = myAudioContext.createDynamicsCompressor();
             var reverb = myAudioContext.createConvolver();
             var volume = myAudioContext.createGainNode();
+            volume.gain.value = 30;
 
             // connect source through a series of filters
             source.connect(compressor);
@@ -35,6 +36,7 @@ ChatApp.View.Esperando = Backbone.View.extend({
 
             console.log('evalSound: cridem a source.noteOn(0)');
             source.noteOn(0);
+            console.log('evalSound: cridem a source.noteOn(0)');
         }
     },
 
