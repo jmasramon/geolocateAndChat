@@ -1,17 +1,18 @@
 ChatApp.View.Esperando = Backbone.View.extend({
+    self: null,
 
     initialize: function () {
-        self = this;
+        this.self = this;
         ChatApp.vent.on('dejarEsperar', this.dejarEsperar);
         ChatApp.vent.on('mostrarEsperando', this.mostrarEsperando);
         this.el = $('section.esperando');
         ChatApp.View.Esperando.evalSound = function () {
             console.log('Entrant a evalSound')
-//            var thisSound;
-//            thisSound = document.getElementById('sound1');
-//            console.log('evalSound: element agafat ' + thisSound.id);
-//            console.log('evalSound: cridem a play()');
-//            thisSound.Play();
+            var thisSound;
+            thisSound = document.getElementById('sound1');
+            console.log('evalSound: element agafat ' + thisSound.id);
+            console.log('evalSound: cridem a play()');
+            thisSound.Play();
 
             if('webkitAudioContext' in window) {
                 var myAudioContext = new webkitAudioContext();
@@ -72,6 +73,6 @@ ChatApp.View.Esperando = Backbone.View.extend({
         // Eliminem tots els missatges vells
         $('section.messages ul.no-padding li:not(:first)').remove();
 
-    },
+    }
 
 });	
