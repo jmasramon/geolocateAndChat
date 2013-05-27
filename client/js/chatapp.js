@@ -14,8 +14,10 @@ window.ChatApp = { // window es el topmost objecte per defecte quan el js corre 
 // ChatApp.serverUrl = 'http://hidden-savannah-7936.herokuapp.com:8080/'; // pel heroku
 ChatApp.serverUrl = 'http://ec2-54-244-204-217.us-west-2.compute.amazonaws.com:1337/chat'; // pel heroku
 
+//////////////////////////////////////////
 ChatApp.vent = {}; // Simplement per passar events entre la connection i la view.esperando
 _.extend(ChatApp.vent, Backbone.Events);
+//////////////////////////////////////////
 
 /**
  * We only actually start executing the javascript, once the dom is fully
@@ -23,6 +25,7 @@ _.extend(ChatApp.vent, Backbone.Events);
  */
 $(document).ready(function () {
 
-    var app = new ChatApp.Application();
+    var app = new ChatApp.Application(); // Inaccesible to the otuter world (internal of an anonymous function)
+    window.app = app; // Just to test it
 
 });

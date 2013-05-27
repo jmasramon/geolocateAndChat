@@ -63,7 +63,9 @@ _.extend(window.ChatApp.Connection.prototype, Backbone.Events, { // Afegim backb
 
         this.socket.emit('nick', {
             nickName: nickName,
-            email:    email, lat: lat, lng: lng
+            email:    email, 
+            lat: lat, 
+            lng: lng
         });
 
     },
@@ -81,7 +83,7 @@ _.extend(window.ChatApp.Connection.prototype, Backbone.Events, { // Afegim backb
      * Sends a positon change to the server
      */
     positionChange: function (nickName, lat, lng) {
-        // console.log('Position change detected. Sending mes to server.'+JSON.stringify({
+        // window.console && console.log('Position change detected. Sending mes to server.'+JSON.stringify({
         //     nickName : nickName,
         //     lat      : lat,
         //     lng      : lng
@@ -101,7 +103,7 @@ _.extend(window.ChatApp.Connection.prototype, Backbone.Events, { // Afegim backb
     onError:        function (errorInfo) {
 
         if (console.log) {
-            console.log('Server error: ' + errorInfo.message);
+            window.console && console.log('Server error: ' + errorInfo.message);
         } else {
             window.alert(errorInfo.message);
         }
@@ -126,7 +128,7 @@ _.extend(window.ChatApp.Connection.prototype, Backbone.Events, { // Afegim backb
      * This event is triggered whenever a user leaves the room.
      */
     onPart: function (user) {
-        console.log('Usuari se nha anat. N\'hi havia # ' + this.userList.length);
+        window.console && console.log('Usuari se nha anat. N\'hi havia # ' + this.userList.length);
 
         // Finding the user with this id.
         var userModel = this.userList.find(
@@ -135,9 +137,9 @@ _.extend(window.ChatApp.Connection.prototype, Backbone.Events, { // Afegim backb
             }
         );
         this.userList.remove(userModel);
-        console.log('Usuari eliminat del model. En queden # ' + this.userList.length);
+        window.console && console.log('Usuari eliminat del model. En queden # ' + this.userList.length);
         if (typeof this.userList === 'undefined' || this.userList.length <= 1) { // Si no queda ningú més connectat (a part de nosaltres mateixos)
-            console.log('Volvemos a esperar.');
+            window.console && console.log('Volvemos a esperar.');
             ChatApp.vent.trigger('mostrarEsperando');
         }
     },
@@ -164,7 +166,7 @@ _.extend(window.ChatApp.Connection.prototype, Backbone.Events, { // Afegim backb
     onUsuarioCerca: function () {
 
         // TODO: avisar a la vista d'alguna manera
-        console.log('missatge usuarioCerca rebut');
+        window.console && console.log('missatge usuarioCerca rebut');
         ChatApp.vent.trigger('dejarEsperar');
 
     },

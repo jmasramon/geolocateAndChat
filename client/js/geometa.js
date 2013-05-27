@@ -195,7 +195,7 @@ function prepareGeolocation (opt_force) {
                         var self = this;
                         var watchId = setInterval(function () {
                             self.getCurrentPosition(successCallback, errorCallback, options);
-                            console.log('Geometa.js: checking current position');
+                            window.console && console.log('Geometa.js: checking current position');
                         }, 10000);
 
                         return watchId;

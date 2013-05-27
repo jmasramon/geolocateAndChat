@@ -9,7 +9,7 @@ module.exports = function (karma) {
         files:      [
             'test/client/mocks.js',
             'static/karma.src.js',
-            'test/client/*.spec.js'
+            'test/client/*.jasmine.coffee'
         ],
 
         // list of files to exclude

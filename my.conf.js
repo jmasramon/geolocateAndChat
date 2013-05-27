@@ -8,11 +8,29 @@ basePath = '';
 files = [
     JASMINE,
     JASMINE_ADAPTER,
-    'test/*.jasmine.js',
+    {pattern: 'client/index.html', watched: false, included: false, served:true},
+    'client/js/vendor/jquery.min.js',
+    'client/js/vendor/underscore.js',
+    'client/js/vendor/backbone.js',
+    'client/js/vendor/less.min.js',
+    'client/js/vendor/socket.io.js',
+    // 'client/js/*.js',
+    'client/js/chatapp.js',
+    'client/js/models.js',
+    'client/js/connection.js',
+    'client/js/view.inputarea.js',
+    'client/js/view.messagelist.js',
+    'client/js/view.userlist.js',
+    'client/js/view.welcome.js',
+    'client/js/view.esperando.js',
+    'client/js/application.js',    // 'ChatServer.js',
     'src/*.js',
     'src/*.coffee',
+    // 'client/js/*.js',
+    'test/*.jasmine.js',
     'test/*.jasmine.coffee',
-    {pattern: 'test/*.jasmine.js', included: false}
+    'client/test/*.jasmine.js',
+    // {pattern: 'test/*.jasmine.js', included: false}
 ];
 
 // list of files to exclude

@@ -2,7 +2,7 @@
  * The Welcome view is responsible for the login screen.
  *
  * The welcome view waits for the login form to be submitted, and after this is
- * done it should trigger a 'submit' event.
+ * done it should trigger a 'submit' event. 
  *
  * The submit event should get an object passed, containing two properties:
  *    nickName
@@ -13,21 +13,20 @@ ChatApp.View.Welcome = Backbone.View.extend({
     events: {
 
         "submit form": "submit"
-
     },
 
-    submit: function (ev) {
+    submit: function(ev) {
 
         // Making sure the browser doesn't submit the form
         ev.preventDefault();
 
         // Gathering form values
         var nickName = this.$('input[name=nickName]').val();
-        var email = this.$('input[name=email]').val();
-        var lat = this.$('input[name=lat]').val();
-        var lng = this.$('input[name=lng]').val();
+        var email    = this.$('input[name=email]').val();
+        var lat      = this.$('input[name=lat]').val();
+        var lng      = this.$('input[name=lng]').val();
 
-        console.log('lat = ' + lat + ' lng = ' + lng);
+        window.console && console.log('welcomeView: lat = ' + lat + ' lng = ' + lng);
 
         // Triggering the 'submit' event
         this.trigger('submit', {
@@ -42,22 +41,22 @@ ChatApp.View.Welcome = Backbone.View.extend({
 
         ChatApp.vent.trigger('mostrarEsperando');
 
-        console.log('Empezamos a controlar el movimiento.')
+        window.console && console.log('Empezamos a controlar el movimiento.')
         this.controlarMovimiento();
 
     },
 
-    controlarMovimiento: function () {
+    controlarMovimiento: function (){
         self = this;
-        function vigila (self) {
-            // console.log('Miramos posición actual');
+        function vigila(self) {
+            // window.console && console.log('Miramos posición actual');
             doGeolocation();
-
+            
             var nickName = this.$('input[name=nickName]').val();
-            var lat = this.$('input[name=lat]').val();
-            var lng = this.$('input[name=lng]').val();
+            var lat      = this.$('input[name=lat]').val();
+            var lng      = this.$('input[name=lng]').val();
 
-            // console.log('La pos actual para '+nickName+' es:('+lat+', '+lng+')');
+            // window.console && console.log('La pos actual para '+nickName+' es:('+lat+', '+lng+')');
             self.trigger('positionChange', {
                 nickName: nickName,
                 lat:      lat,
@@ -65,10 +64,7 @@ ChatApp.View.Welcome = Backbone.View.extend({
             });
             // ChatApp.Connection.positionChange(document.getElementById('nickName').value, document.getElementById('lat').value, document.getElementById('lng').value);
         }
-
-        setInterval(function () {
-            vigila(self);
-        }, 1000);
+        setInterval( function () { vigila(self); }, 1000);
     }
 
 

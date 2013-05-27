@@ -103,11 +103,11 @@ jasmine.HtmlReporter = function (_doc) {
 
     self.log = function () {
         var console = jasmine.getGlobal().console;
-        if (console && console.log) {
-            if (console.log.apply) {
-                console.log.apply(console, arguments);
+        if (console && window.console && console.log) {
+            if (window.console && console.log.apply) {
+                window.console && console.log.apply(console, arguments);
             } else {
-                console.log(arguments); // ie fix: console.log.apply doesn't exist on ie
+                window.console && console.log(arguments); // ie fix: window.console && console.log.apply doesn't exist on ie
             }
         }
     };
@@ -344,9 +344,9 @@ jasmine.HtmlReporter.ReporterView = function (dom) {
     };
 
     this.complete = function () {
-        dom.alert.removeChild(this.runningAlert);
+        // dom.alert.removeChild(this.runningAlert);
 
-        this.skippedAlert.innerHTML = "Ran " + this.runningSpecCount + " of " + specPluralizedFor(this.totalSpecCount) + " - run all";
+        // this.skippedAlert.innerHTML = "Ran " + this.runningSpecCount + " of " + specPluralizedFor(this.totalSpecCount) + " - run all";
 
         if (this.failedCount === 0) {
             dom.alert.appendChild(this.createDom('span', {className: 'passingAlert bar'}, "Passing " + specPluralizedFor(this.passedCount)));
@@ -653,11 +653,11 @@ jasmine.TrivialReporter.prototype.reportSpecResults = function (spec) {
 
 jasmine.TrivialReporter.prototype.log = function () {
     var console = jasmine.getGlobal().console;
-    if (console && console.log) {
-        if (console.log.apply) {
-            console.log.apply(console, arguments);
+    if (console && window.console && console.log) {
+        if (window.console && console.log.apply) {
+            window.console && console.log.apply(console, arguments);
         } else {
-            console.log(arguments); // ie fix: console.log.apply doesn't exist on ie
+            window.console && console.log(arguments); // ie fix: window.console && console.log.apply doesn't exist on ie
         }
     }
 };

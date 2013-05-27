@@ -5,48 +5,10 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f04b534-553e-4b53-b831-5765be2cf97e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Connect.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Growl.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SocketIo.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Vendor.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/jmasramon.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChatServer-ck.js" afterPath="$PROJECT_DIR$/ChatServer-ck.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/application.js" afterPath="$PROJECT_DIR$/client/js/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/vendor/backbone.js" afterPath="$PROJECT_DIR$/client/js/vendor/backbone.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/css/bootstrap-responsive.css" afterPath="$PROJECT_DIR$/client/css/bootstrap-responsive.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/css/bootstrap-responsive.min.css" afterPath="$PROJECT_DIR$/client/css/bootstrap-responsive.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/css/bootstrap.css" afterPath="$PROJECT_DIR$/client/css/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/bootstrap.js" afterPath="$PROJECT_DIR$/client/js/bootstrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/client/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/client/js/bootstrap.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/chatapp.js" afterPath="$PROJECT_DIR$/client/js/chatapp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codekit-config.json" afterPath="$PROJECT_DIR$/codekit-config.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/connection.js" afterPath="$PROJECT_DIR$/client/js/connection.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/geometa.js" afterPath="$PROJECT_DIR$/client/js/geometa.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/index.html" afterPath="$PROJECT_DIR$/client/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/vendor/jquery.min.js" afterPath="$PROJECT_DIR$/client/js/vendor/jquery.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/vendor/less.min.js" afterPath="$PROJECT_DIR$/client/js/vendor/less.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/links.html" afterPath="$PROJECT_DIR$/client/links.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/models.js" afterPath="$PROJECT_DIR$/client/js/models.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proves grep.js" afterPath="$PROJECT_DIR$/proves grep.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/vendor/socket.io.js" afterPath="$PROJECT_DIR$/client/js/vendor/socket.io.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/style.css" afterPath="$PROJECT_DIR$/client/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/style.less" afterPath="$PROJECT_DIR$/client/style.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/vendor/underscore.js" afterPath="$PROJECT_DIR$/client/js/vendor/underscore.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/view.esperando.js" afterPath="$PROJECT_DIR$/client/js/view.esperando.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/view.inputarea.js" afterPath="$PROJECT_DIR$/client/js/view.inputarea.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/view.messagelist.js" afterPath="$PROJECT_DIR$/client/js/view.messagelist.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/view.userlist.js" afterPath="$PROJECT_DIR$/client/js/view.userlist.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/view.welcome.js" afterPath="$PROJECT_DIR$/client/js/view.welcome.js" />
-    </list>
+    <list default="true" id="9f04b534-553e-4b53-b831-5765be2cf97e" name="Default" comment="" />
     <ignored path="nodejs-chat2.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368523175711" ignored="false" />
+    <file path="/Dummy.txt" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368551041682" ignored="false" />
     <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/package.json" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073138" ignored="false" />
     <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/test.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073138" ignored="false" />
     <file path="$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/diff_multi_bench_output.js" changelist="9f04b534-553e-4b53-b831-5765be2cf97e" time="1368438073138" ignored="false" />
@@ -467,11 +429,8 @@
       <file leaf-file-name="view.esperando.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/js/view.esperando.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="36" selection-start="1334" selection-end="1334" vertical-scroll-proportion="-4.6153846">
-              <folding>
-                <element signature="e#1639#2214#0" expanded="true" />
-                <element signature="e#2251#2794#0" expanded="true" />
-              </folding>
+            <state line="32" column="36" selection-start="1334" selection-end="1334" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -479,7 +438,7 @@
       <file leaf-file-name="ChatServer.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ChatServer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="0" selection-start="1646" selection-end="1924" vertical-scroll-proportion="0.53731346">
+            <state line="86" column="0" selection-start="1646" selection-end="1924" vertical-scroll-proportion="0.47014925">
               <folding>
                 <element signature="e#0#1210#0" expanded="true" />
               </folding>
@@ -490,11 +449,8 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="0" selection-start="3893" selection-end="3893" vertical-scroll-proportion="-15.0">
-              <folding>
-                <element signature="tag#head#0" expanded="true" />
-                <element signature="tag#section#0;tag#body#0" expanded="true" />
-              </folding>
+            <state line="84" column="0" selection-start="3893" selection-end="3893" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -683,13 +639,13 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="Errors" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/node_modules/growl/lib" />
+    <property name="recentsLimit" value="5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PrototipArt" />
     <property name="FullScreen" value="false" />
-    <property name="GoToClass.includeJavaFiles" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
   </component>
   <component name="RunManager" selected="JsTestDriver.greeterTest.js">
     <configuration default="false" name="greeterTest.js" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver" temporary="true">
@@ -916,45 +872,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/js/models.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#136#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/js/geometa.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="0" selection-start="3893" selection-end="3893" vertical-scroll-proportion="-15.0">
-          <folding>
-            <element signature="tag#head#0" expanded="true" />
-            <element signature="tag#section#0;tag#body#0" expanded="true" />
-          </folding>
+        <state line="84" column="0" selection-start="3893" selection-end="3893" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/js/view.esperando.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="36" selection-start="1334" selection-end="1334" vertical-scroll-proportion="-4.6153846">
-          <folding>
-            <element signature="e#1639#2214#0" expanded="true" />
-            <element signature="e#2251#2794#0" expanded="true" />
-          </folding>
+        <state line="32" column="36" selection-start="1334" selection-end="1334" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ChatServer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="0" selection-start="1646" selection-end="1924" vertical-scroll-proportion="0.53731346">
+        <state line="86" column="0" selection-start="1646" selection-end="1924" vertical-scroll-proportion="0.47014925">
           <folding>
             <element signature="e#0#1210#0" expanded="true" />
           </folding>

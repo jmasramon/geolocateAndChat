@@ -41,19 +41,24 @@ ChatApp.Application.prototype = {
      */
     initViews: function () {
         // First we stablish the topmost dom element of every view (where the events will come from and where the manipulations will be done)
+        // They are inaccesible to the outer world. They act through events.
         var welcomeView = new ChatApp.View.Welcome({
             el: $('section.welcome')
         });
+
         var esperandoView = new ChatApp.View.Esperando({
             el: $('section.esperando')
         });
+        
         var userListView = new ChatApp.View.UserList({
             el:         $('section.userList'),
             collection: this.userList // Per tenir notificacions de canvis a qualsevol usuari
         });
+        
         var inputAreaView = new ChatApp.View.InputArea({
             el: $('section.inputArea')
         });
+        
         var messageListView = new ChatApp.View.MessageList({
             el:         $('section.messages'),
             collection: this.messageList// Per tenir notificacions de canvis a qualsevol missatge
@@ -63,6 +68,7 @@ ChatApp.Application.prototype = {
 
         // Definim els missatges que ens poden arribar de les vistes
         welcomeView.on('submit', function (userInfo) {
+            window.console && console.log('application.js: welcomeView has triggered submit');
             self.connection.connect(userInfo.nickName, userInfo.email, userInfo.lat, userInfo.lng);
         });
         welcomeView.on('positionChange', function (userInfo) {
@@ -71,6 +77,13 @@ ChatApp.Application.prototype = {
         inputAreaView.on('message', function (message) { // triggered by the inputAreaView when a message is written
             self.connection.message(message);
         });
+
+        this.welcomeView = welcomeView; // Just to test it
+        this.esperandoView = esperandoView; // Just to test it
+        this.userListView = userListView; // Just to test it
+        this.inputAreaView = inputAreaView; // Just to test it
+        this.messageListView = messageListView; // Just to test it
+
     },
 
     /**
