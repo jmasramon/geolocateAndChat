@@ -51,17 +51,21 @@ ChatApp.View.Welcome = Backbone.View.extend({
         function vigila(self) {
             // window.console && console.log('Miramos posición actual');
             doGeolocation();
-            
-            var nickName = this.$('input[name=nickName]').val();
-            var lat      = this.$('input[name=lat]').val();
-            var lng      = this.$('input[name=lng]').val();
 
-            // window.console && console.log('La pos actual para '+nickName+' es:('+lat+', '+lng+')');
-            self.trigger('positionChange', {
-                nickName: nickName,
-                lat:      lat,
-                lng:      lng
-            });
+            if (positionChanged){
+            
+                var nickName = this.$('input[name=nickName]').val();
+                var lat      = this.$('input[name=lat]').val();
+                var lng      = this.$('input[name=lng]').val();
+
+                // window.console && console.log('La pos actual para '+nickName+' es:('+lat+', '+lng+')');
+                self.trigger('positionChange', {
+                    nickName: nickName,
+                    lat:      lat,
+                    lng:      lng
+                });
+                positionChanged = false;
+            }
             // ChatApp.Connection.positionChange(document.getElementById('nickName').value, document.getElementById('lat').value, document.getElementById('lng').value);
         }
         setInterval( function () { vigila(self); }, 1000);

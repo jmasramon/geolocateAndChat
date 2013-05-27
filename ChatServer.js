@@ -76,7 +76,7 @@ var crypto = require('crypto');
 // fs = require('fs'),
 var users = [];
 
-// Servidor http per la plana inicial (i única)
+// // Servidor http per la plana inicial (i única)
 // var util = require('util');
 // var connect = require('connect');
 // var port = 8080; // Tenim el web server escoltant al 1337
@@ -123,7 +123,7 @@ var users = [];
 //     });
 // });
 // http.createServer(app).listen(app.get('port'), function(){
-//   window.console && console.log('Express server listening on port ' + app.get('port'));
+//    console.log('Express server listening on port ' + app.get('port'));
 // });
 
 function User () {
@@ -154,13 +154,13 @@ function distancia (user1, user2) {
 ///////////////////////////////
 
 function dosCerca () {
-    // window.console && console.log("comprobando cercania");
+    //  console.log("comprobando cercania");
     if (users && users[0] && users[1]) {
         for (var i = 0; i <= users.length - 1; i++) {
             for (var j = i + 1; j <= users.length - 1; j++) {
-                window.console && console.log("i=" + i + " i j=" + j);
+                 console.log("i=" + i + " i j=" + j);
                 var dist = distancia(users[i], users[j]);
-                window.console && console.log("Usuarios: " + users[i].nickName + " con coords (" + users[i].lat + " , " + users[i].lng + ") " + " y " + users[j].nickName + " con coords (" + users[j].lat + " , " + users[j].lng + ") estan a dist=" + dist);
+                 console.log("Usuarios: " + users[i].nickName + " con coords (" + users[i].lat + " , " + users[i].lng + ") " + " y " + users[j].nickName + " con coords (" + users[j].lat + " , " + users[j].lng + ") estan a dist=" + dist);
                 if (dist < 10) return true;
             }
         }
@@ -172,11 +172,11 @@ function dosCerca () {
 var interval;
 
 function vigilar (chatRoom, socket) {
-    window.console && console.log("Setting interval. For socket = " + socket.id);
+     console.log("Setting interval. For socket = " + socket.id);
     interval = setInterval(function () {
-        window.console && console.log("checking proximity. For socket = " + socket.id);
+         console.log("checking proximity. For socket = " + socket.id);
         if (dosCerca()) {
-            window.console && console.log("dos cerca. For socket = " + socket.id);
+             console.log("dos cerca. For socket = " + socket.id);
             // socket.broadcast.emit('usuarioCerca');
             chatRoom.emit('usuarioCerca');
             clearInterval(interval);
@@ -206,7 +206,7 @@ function grep (elems, callback, inv) {
 // io.sockets.on('connection', function(socket) {
 var chatRoom;
 chatRoom = io.of('/chat').on('connection', function (socket) {
-    window.console && console.log("Connection stablished. For socket = " + socket.id);
+     console.log("Connection stablished. For socket = " + socket.id);
 
     // TODO: acabar-ho bé. Ara se'n crea un per cada login i per tant envia
     // dos missatges pel socket. Però sinó, un dels dos no reb el missatge
@@ -230,7 +230,7 @@ chatRoom = io.of('/chat').on('connection', function (socket) {
         user.lat = info.lat;
         user.lng = info.lng;
         users.push(user); // Guarda el nou usu a la llista d'usus connectats. No hi ha bd. Tot es fa en t real (en memo)
-        window.console && console.log('New array of users: ' + JSON.stringify(users, null, 4));
+         console.log('New array of users: ' + JSON.stringify(users, null, 4));
 
         chatRoom.emit('join', user.serialize()); // envia als usuaris connectats les dades del nou connectat
         socket.emit('userList', users.map(
@@ -243,11 +243,11 @@ chatRoom = io.of('/chat').on('connection', function (socket) {
 
     socket.on('disconnect', function () {
 
-        window.console && console.log("Initial users: " + JSON.stringify(users, null, 4) + " For socket = " + socket.id);
-        window.console && console.log("User num " + users.indexOf(user) + " disconnecting." + " For socket = " + socket.id);
+         console.log("Initial users: " + JSON.stringify(users, null, 4) + " For socket = " + socket.id);
+         console.log("User num " + users.indexOf(user) + " disconnecting." + " For socket = " + socket.id);
         users.splice(
             users.indexOf(user), 1); // Elimina l'usu de la llista d'usus connectats
-        window.console && console.log("Final users: " + JSON.stringify(users, null, 4) + " For socket = " + socket.id);
+         console.log("Final users: " + JSON.stringify(users, null, 4) + " For socket = " + socket.id);
         chatRoom.emit('part', user.serialize()); // envia als usus que queden connectats les dades del que se'n va
     });
 
@@ -266,8 +266,8 @@ chatRoom = io.of('/chat').on('connection', function (socket) {
     });
 
     socket.on('positionChange', function (info) {
-        window.console && console.log('Datos recividos: ' + info.nickName + ', ' + info.lat + ', ' + info.lng);
-        window.console && console.log("Initial users: " + JSON.stringify(users, null, 4));
+         console.log('Datos recividos: ' + info.nickName + ', ' + info.lat + ', ' + info.lng);
+         console.log("Initial users: " + JSON.stringify(users, null, 4));
 
         if (!info.lat || !info.lng || !info.nickName) {
             socket.emit('error', {
@@ -276,23 +276,23 @@ chatRoom = io.of('/chat').on('connection', function (socket) {
             return;
         }
 
-        window.console && console.log("Initial info: " + JSON.stringify(info, null, 4));
-        window.console && console.log("Initial nickName: " + info.nickName);
+         console.log("Initial info: " + JSON.stringify(info, null, 4));
+         console.log("Initial nickName: " + info.nickName);
         var movingUser = grep(users, function (e) {
             return e.nickName == info.nickName;
         }, false);
 
-        window.console && console.log('moving user = ' + JSON.stringify(movingUser[0], null, 4));
-        window.console && console.log('Array of users: ' + JSON.stringify(users, null, 4));
-        window.console && console.log('Index of movingUser: ' + users.indexOf(movingUser[0]));
+         console.log('moving user = ' + JSON.stringify(movingUser[0], null, 4));
+         console.log('Array of users: ' + JSON.stringify(users, null, 4));
+         console.log('Index of movingUser: ' + users.indexOf(movingUser[0]));
 
         users.splice(users.indexOf(movingUser[0]), 1); // Elimina l'usu de la llista d'usus connectats
-        window.console && console.log('Array of users after splice: ' + JSON.stringify(users, null, 4));
+         console.log('Array of users after splice: ' + JSON.stringify(users, null, 4));
 
         movingUser[0].lat = info.lat;
         movingUser[0].lng = info.lng;
         users.push(movingUser[0]); // Guarda el nou usu a la llista d'usus connectats. No hi ha bd. Tot es fa en t real (en memo)
-        window.console && console.log('User moved. New array of users: ' + JSON.stringify(users, null, 4));
+         console.log('User moved. New array of users: ' + JSON.stringify(users, null, 4));
     });
 
 });

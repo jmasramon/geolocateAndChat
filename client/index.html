@@ -9,7 +9,8 @@
     <script type="text/javascript" src="js/geometa.js">
     </script>
     <script type="text/javascript">
-            function initialise() {
+        var positionChanged = false;
+        function initialise() {
             prepareGeolocation();
             doGeolocation();
             //positionSuccess({coords:{latitude: 35, longitude: 39}}); // Per probar que ho estic posant bé
@@ -51,10 +52,16 @@
             var latLng = new google.maps.LatLng(coords.latitude, coords.longitude);
 
             // Store them in the form hidden input 
-            document.getElementById('lat').value = coords.latitude;
+            if (coords.latitude != document.getElementById('lat').value){
+                positionChanged = true;
+                document.getElementById('lat').value = coords.latitude;
+            }
             // document.getElementById('lat').style.visibility='visible';
             // console.info(document.getElementById('lat').value);
-            document.getElementById('lng').value = coords.longitude;
+            if (coords.longitude != document.getElementById('lng').value){
+                positionChanged = true;
+                document.getElementById('lng').value = coords.longitude;
+            }
             // document.getElementById('lng').style.visibility='visible';
             // console.info(document.getElementById('lng').value);
         }
