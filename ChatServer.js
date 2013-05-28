@@ -76,14 +76,14 @@ var crypto = require('crypto');
 // fs = require('fs'),
 var users = [];
 
-// Servidor http per la plana inicial (i única)
-var util = require('util');
-var connect = require('connect');
-var port = 8080; // Tenim el web server escoltant al 1337
+// // Servidor http per la plana inicial (i única)
+// var util = require('util');
+// var connect = require('connect');
+// var port = 8080; // Tenim el web server escoltant al 1337
 
-connect.createServer(connect.static(__dirname)).listen(port);
-util.puts('Listening on ' + port + '...');
-util.puts('Press Ctrl + C to stop.');
+// connect.createServer(connect.static(__dirname)).listen(port);
+// util.puts('Listening on ' + port + '...');
+// util.puts('Press Ctrl + C to stop.');
 
 // var app = express();
 // // all environments
