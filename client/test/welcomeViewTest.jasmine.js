@@ -66,8 +66,7 @@ describe("The welcomeView", function(){
     // $("section.welcome").replaceWith(this.divClone);
   });
 
-  it("should control the movement of the user", function(){
-    console.log('User agent = ' + navigator.userAgent);
+  it("should control the movement of the user but do nothing if it does not change", function() {
     if (navigator.userAgent.indexOf("MSIE") == -1){
       console.log('No IE. Testing');
       spyOn(window.app.connection, 'connect'); // To prevent calls to the server
@@ -78,6 +77,7 @@ describe("The welcomeView", function(){
       jasmine.Clock.useMock();
       this.form.submit();
 
+      expect(window.app.connection.connect).toHaveBeenCalled();
       expect(window.app.welcomeView.controlarMovimiento).toHaveBeenCalled();
       expect(window.app.connection.positionChange).not.toHaveBeenCalled();
       expect(window.doGeolocation).not.toHaveBeenCalled();
@@ -85,8 +85,34 @@ describe("The welcomeView", function(){
       jasmine.Clock.tick(1001);
 
       expect(window.doGeolocation).toHaveBeenCalled();
+      expect(window.app.connection.positionChange).not.toHaveBeenCalled();
+    }
+  });
+
+  it("should control the movement of the user and send update to server if it has moved", function(){
+    // console.log('User agent = ' + navigator.userAgent);
+    if (navigator.userAgent.indexOf("MSIE") == -1){
+      console.log('No IE. Testing this funcitionality');
+      spyOn(window.app.connection, 'connect'); // To prevent calls to the server
+      spyOn(window.app.welcomeView, 'controlarMovimiento').andCallThrough();
+      spyOn(window, 'doGeolocation');
+      spyOn(window.app.connection, 'positionChange');
+
+      jasmine.Clock.useMock();
+      this.form.submit();
+
+      expect(window.app.connection.connect).toHaveBeenCalled();
+      expect(window.app.welcomeView.controlarMovimiento).toHaveBeenCalled();
+      expect(window.app.connection.positionChange).not.toHaveBeenCalled();
+      expect(window.doGeolocation).not.toHaveBeenCalled();
+
+      window.positionChanged = true;
+      jasmine.Clock.tick(1001);
+
+      expect(window.doGeolocation).toHaveBeenCalled();
       expect(window.app.connection.positionChange).toHaveBeenCalled();
       expect(window.app.connection.positionChange).toHaveBeenCalledWith('jmsol','41.395039','2.148918');
+      expect(window.positionChanged).toBe(false);
 
       // $("section.welcome").replaceWith(secWelcome);
       // $("section.esperando").replaceWith(secEsperando);

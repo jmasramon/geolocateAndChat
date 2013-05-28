@@ -24,6 +24,10 @@ describe("The environtment of the app", function() {
     expect(window.app.welcomeView).toBeDefined();
   });
 
+  it("should have set positionChanged initially to false", function() {
+    expect(window.positionChanged).toBe(false);
+  });
+
   it("should not have triggered any error", function  () {
       expect(console.error).not.toHaveBeenCalled();
   });
