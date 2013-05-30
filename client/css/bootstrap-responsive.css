@@ -979,8 +979,8 @@
 
 @media (max-width: 767px) {
     body {
-        padding-right: 20px;
-        padding-left: 20px;
+        padding-right: 0px;
+        padding-left: 0px;
     }
 
     .navbar-fixed-top,
@@ -1418,6 +1418,7 @@ ul.no-padding {
     border-radius: 15px;
     box-shadow: 3px 3px 5px #CCC;
     list-style: none;
+    font-size: 80%;
 }
 
 .messages li.template {
@@ -1447,8 +1448,7 @@ ul.no-padding {
 }
 
 .template {
-    visibility: hidden;
-    \
+    display: none;
 }
 
 input#lat, #lng {
@@ -1554,9 +1554,10 @@ input#lat, #lng {
 }
 
 .triangle-border.left {
-    margin-left: 21px;
-    margin-right: 70px;
-    border: 5px solid lightblue;
+    margin-left: 15px;
+    margin-right: 30px;
+    margin-bottom: 3px;
+    border: 1px solid lightblue;
 }
 
 .triangle-border {
@@ -1575,7 +1576,7 @@ input#lat, #lng {
     top: 10px;
     bottom: auto;
     left: -30px;
-    border-width: 15px 30px 15px 0;
+    border-width: 5px 0px 5px 0;
     border-color: transparent lightblue;
 }
 
@@ -1612,9 +1613,10 @@ input#lat, #lng {
 }
 
 .triangle-border.right {
-    border: 5px solid lightgreen;
-    margin-left: 70px;
-    margin-right: 21px;
+    border: 1px solid lightgreen;
+    margin-left: 30px;
+    margin-right: 15px;
+    margin-bottom: 3px;
 }
 
 .triangle-border.right::before {
@@ -1622,7 +1624,7 @@ input#lat, #lng {
     bottom: auto;
     left: auto;
     right: -30px;
-    border-width: 15px 0 15px 30px;
+    border-width: 5px 0 5px 0px;
     border-color: transparent lightgreen;
 }
 

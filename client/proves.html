@@ -27,62 +27,10 @@
     <script type="text/javascript" src="js/view.welcome.js"></script>
     <script type="text/javascript" src="js/view.esperando.js"></script>
     <script type="text/javascript" src="js/application.js"></script>
-<!-- ** Testing start ********************************************* -->
-<!--
-    <link rel="stylesheet" type="text/css" href="css/jasmine.css">
-    <script type="text/javascript" src="js/vendor/jasmine.js">    </script>
-    <script type="text/javascript" src="js/vendor/jasmine-html.js">    </script>
-    <script type="text/javascript" src="js/vendor/jasmine-jquery.js">    </script>
--->
-<!-- ** Testing end ********************************************* -->
-    <!--include source files here... -->
-    <!--script type="text/javascript" src="src/Player.js"></script-->
-    <!--script type="text/javascript" src="src/Song.js"></script-->
-    <!--include spec files here... -->
-    <!--script type="text/javascript" src="spec/SpecHelper.js"></script-->
-    <!--script type="text/javascript" src="spec/PlayerSpec.js"></script-->
-<!-- ** Testing start ********************************************* -->
-<!--
-    <script type="text/javascript">
-        (function() {
-        var jasmineEnv = jasmine.getEnv();
-        jasmineEnv.updateInterval = 1000;
-
-        var htmlReporter = new jasmine.HtmlReporter();
-
-        jasmineEnv.addReporter(htmlReporter);
-
-        jasmineEnv.specFilter = function(spec) {
-            return htmlReporter.specFilter(spec);
-        };
-
-        var currentWindowOnload = window.onload;
-
-        window.onload = function() {
-            if (currentWindowOnload) {
-                currentWindowOnload();
-            }
-            execJasmine();
-        };
-
-        function execJasmine() {
-            window.console && console.log('Executant execJasmine');
-            jasmineEnv.execute();
-        }
-
-    })();
-    </script>
-per producció --> 
-<!-- ** Testing end ********************************************* -->
 </head>
 
-<body onload="initialise()"> 
-<!-- ** Testing start ********************************************* -->
-<!--
-<body>
--->
-<!-- ** Testing end ********************************************* -->
-    <section class="welcome">
+<body > 
+    <section class="welcome ">
         <h1>
             Welcome!
         </h1>
@@ -109,8 +57,8 @@ per producció -->
                     Connect
                 </button>
             </div>
-            <input name="lat" id="lat" class="template" value="41.395039"/>
-            <input name="lng" id="lng" class="template" value="2.148918"/>
+            <input name="lat" type="number" id="lat" class="template" value="41.395039"/>
+            <input name="lng" type="number" id="lng" class="template" value="2.148918"/>
         </form>
     </section>
     <section class="esperando template">
@@ -152,21 +100,4 @@ per producció -->
             <button type="submit">Submit</button>
         </form>
     </section>
-
-<!-- ** Testing start ********************************************* -->
-<!--
-    <script type="text/javascript" src="test/environtmentTest.jasmine.js">
-    </script>
-    <script type="text/javascript" src="test/welcomeViewTest.jasmine.js">
-    </script>
-    <script type="text/javascript" src="test/esperandoViewTest.jasmine.js">
-    </script>
-    <script type="text/javascript" src="test/userlistViewTest.jasmine.js">
-    </script>
-    <script type="text/javascript" src="test/inputareaViewTest.jasmine.js">
-    </script>
-    <script type="text/javascript" src="test/messagelistViewTest.jasmine.js">
-    </script>
--->
-<!-- ** Testing end ********************************************* -->
 </body>
