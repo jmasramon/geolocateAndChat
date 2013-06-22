@@ -1582,7 +1582,7 @@ input#lat, #lng {
 
 .triangle-border::before {
     content: "";
-    position: absolute;
+    position: absolute;br
     bottom: -20px;
     left: 40px;
     border-width: 20px 20px 0;
